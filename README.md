@@ -12,6 +12,7 @@
 ## Table of Contents
 
 * [Preparing environment to contribute](#preparing-environment)
+* [Playground](#playground)
 * [Building](#building)
 * [Testing](#testing)
 * [Linting](#linting)
@@ -27,6 +28,16 @@ nvm use
 npm install npm@8.3.0 -g
 npm install
 ```
+
+## Playground
+
+This library offers a playground where we can play with the functions that we are developing
+
+```bash
+npm run playground
+```
+
+In case you wan
 
 ## Building
 
