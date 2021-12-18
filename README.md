@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  Skeleton for new typescript libraries
+ This is a test Skeleton for new typescript libraries
 </p>
 
 ## Table of Contents
