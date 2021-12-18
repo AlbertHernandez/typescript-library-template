@@ -16,7 +16,7 @@
 * [Building](#building)
 * [Testing](#testing)
 * [Linting](#linting)
-* [Coding standards](#coding-standards)
+* [Contributing](#contributing)
 
 ## Preparing environment to contribute
 
@@ -67,7 +67,6 @@ Fix lint issues automatically
 npm run lint:fix
 ```
 
-## Coding standards
+## Contributing
 
-Make sure you have environment, that supports eslint / prettier.
-The git hooks will ensure for violation of the standards.
+Contributions welcome! See the [Contributing Guide](https://github.com/AlbertHernandez/typescript-library-skeleton/blob/main/CONTRIBUTING.md).
