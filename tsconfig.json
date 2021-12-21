@@ -5,7 +5,7 @@
     "target": "es6",
     "noImplicitAny": true,
     "moduleResolution": "node",
-    "sourceMap": false,
+    "sourceMap": true,
     "rootDir": ".",
     "strict": true,
     "noEmit": false,
