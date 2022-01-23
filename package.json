@@ -1,7 +1,7 @@
 {
   "name": "typescript-library-skeleton",
   "version": "1.0.0",
-  "description": "",
+  "description": "Skeleton for new typescript libraries",
   "main": "src/index.js",
   "scripts": {
     "test": "npm run test:unit",
@@ -23,8 +23,8 @@
     "library",
     "skeleton"
   ],
-  "author": "",
-  "license": "",
+  "author": "alberthernandezdev@gmail.com",
+  "license": "MIT",
   "engines": {
     "node": ">=16.0.0",
     "npm": ">=8.3.0"
