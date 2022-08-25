@@ -1,4 +1,4 @@
-<h1 align="center">Typescript Library Skeleton</h3>
+<h1 align="center">Typescript Library Skeleton</h1>
 
 <p align="center">
   Skeleton for new typescript libraries
