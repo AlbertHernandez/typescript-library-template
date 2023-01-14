@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "npm run test:unit",
-    "test:unit": "NODE_ENV=test jest",
+    "test:unit": "NODE_ENV=test jest --coverage",
     "prepare": "husky install",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
