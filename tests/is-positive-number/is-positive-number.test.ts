@@ -1,7 +1,7 @@
 import { isPositiveNumber } from "../../src";
 
 describe("isPositiveNumber", () => {
-  test("when is executed with a positivsse number should return true", () => {
+  test("when is executed with a positive number should return true", () => {
     expect(isPositiveNumber(1)).toBeTruthy();
   });
 

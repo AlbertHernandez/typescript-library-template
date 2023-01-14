@@ -22,7 +22,7 @@
 This library has been designed to work with node v16 and npm 8. In order to configure your local environment you can run:
 
 ```bash
-nvm install 16.0.0
+nvm install 18.0.0
 nvm use
 npm install npm@8.3.0 -g
 npm install
@@ -35,8 +35,6 @@ This library offers a playground where we can play with the functions that we ar
 ```bash
 npm run playground
 ```
-
-In case you wan
 
 ## Building
 

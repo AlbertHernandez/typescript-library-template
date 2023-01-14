@@ -24,7 +24,7 @@ All contributions are welcome, just follow the guide below
 
 ### Before you begin
 
-1. Install node 16
+1. Install node 18
 2. Install npm 8
 
 ## Running the tests
