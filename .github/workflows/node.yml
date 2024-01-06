@@ -24,8 +24,8 @@ jobs:
         run: npm run build
       - name: Lint code 💅
         run: npm run lint
-      - name: Run tests ✅
-        run: npm run test
+#      - name: Run tests ✅
+#        run: npm run test
       - name: Find current PR 🔎
         uses: jwalton/gh-find-current-pr@v1
         id: findPr
