@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/AlbertHernandez/typescript-library-template/actions/workflows/nodejs.yml?branch=main"><img src="https://github.com/AlbertHernandez/typescript-library-template/actions/workflows/nodejs.yml/badge.svg?branch=main" alt="nodejs"/></a>
   <a href="https://nodejs.org/docs/latest-v20.x/api/index.html"><img src="https://img.shields.io/badge/node-20.x-green.svg" alt="node"/></a>
-  <a href="https://nodejs.org"><img src="https://img.shields.io/badge/supported_node-16.x_--_20.x-forestgreen.svg" alt="supported node"/></a>
+  <a href="https://nodejs.org"><img src="https://img.shields.io/badge/supported_node-18.x_--_20.x-forestgreen.svg" alt="supported node"/></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/typescript-5.x-blue.svg" alt="typescript"/></a>
   <a href="https://www.npmjs.com/"><img src="https://img.shields.io/badge/npm-10.x-red.svg" alt="npm"/></a>
   <a href="https://swc.rs/"><img src="https://img.shields.io/badge/Compiler-SWC_-orange.svg" alt="swc"/></a>
