@@ -1,6 +1,16 @@
 import type { Config } from "jest";
 
+const MIN_COVERAGE = 80;
+
 const config: Config = {
+  coverageThreshold: {
+    global: {
+      statements: MIN_COVERAGE,
+      branches: MIN_COVERAGE,
+      functions: MIN_COVERAGE,
+      lines: MIN_COVERAGE,
+    },
+  },
   transform: {
     "^.+\\.(t|j)s$": "@swc/jest",
   },
