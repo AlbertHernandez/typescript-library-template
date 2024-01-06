@@ -13,20 +13,24 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v4
+      - name: Running Release Please ⭐️
+        uses: google-github-actions/release-please-action@v4
         id: release
         with:
           release-type: node
-      - uses: actions/checkout@v4
+      - name: Checkout 🛬
+        uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
-      - uses: actions/setup-node@v4
+      - uses: Setup Node ⚙️
+        if: ${{ steps.release.outputs.release_created }}
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
+      - name: Install dependencies 📥
         if: ${{ steps.release.outputs.release_created }}
-      - run: npm ci
+        uses: bahmutov/npm-install@v1
+      - name: Publish to NPM 🚀
         if: ${{ steps.release.outputs.release_created }}
-      - run: npm publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        if: ${{ steps.release.outputs.release_created }}
