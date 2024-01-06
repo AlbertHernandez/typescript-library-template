@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [18, ${{ env.default-node-version }}]
+        node-version: [18, 20.x]
 
     steps:
       - name: Checkout 🛬
@@ -33,7 +33,7 @@ jobs:
         uses: jwalton/gh-find-current-pr@v1
         id: findPr
       - name: Show coverage report in the PR 📊
-        if: steps.findPr.outputs.number
+        if: steps.findPr.outputs.number && ${{ matrix.node-version }} == ${{ env.default-node-version }}
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
           prnumber: ${{ steps.findPr.outputs.number }}
