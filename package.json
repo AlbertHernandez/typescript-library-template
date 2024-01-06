@@ -24,7 +24,7 @@
   },
   "scripts": {
     "dev": "tsnd --inspect=9229 --respawn playground",
-    "prepublishOnly": "npm ci && npm run build",
+    "prepublishOnly": "npm i && npm run build",
     "build": "npm run validate-typescript && npm run build:clean && npm run generate-dist",
     "test": "rimraf coverage && jest",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
