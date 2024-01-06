@@ -29,14 +29,3 @@ jobs:
         run: npm run lint
       - name: Run tests ✅
         run: npm run test
-      - name: Find current PR 🔎
-        uses: jwalton/gh-find-current-pr@v1
-        id: findPr
-      - run: |
-          echo Matrix: ${{ matrix.node-version }}
-          echo default: ${{ env.default-node-version }}
-      - name: Show coverage report in the PR 📊
-        if: ${{ steps.findPr.outputs.number && matrix.node-version == env.default-node-version }}
-        uses: ArtiomTr/jest-coverage-report-action@v2
-        with:
-          prnumber: ${{ steps.findPr.outputs.number }}
