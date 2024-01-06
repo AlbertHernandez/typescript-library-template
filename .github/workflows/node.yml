@@ -29,7 +29,7 @@ jobs:
       - name: Find current PR 🔎
         uses: jwalton/gh-find-current-pr@v1
         id: findPr
-      - name: Show coverage report in the PR 📊
+      - name: Show coverage report in  the PR 📊
         if: steps.findPr.outputs.number
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
