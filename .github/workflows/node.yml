@@ -26,3 +26,11 @@ jobs:
         run: npm run lint
       - name: Run tests ✅
         run: npm run test
+      - name: Find current PR 🔎
+        uses: jwalton/gh-find-current-pr@v1
+        id: findPr
+      - name: Show coverage report 📊
+        uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          prnumber: ${{ steps.findPr.outputs.number }}
+          coverage-file: ./coverage/coverage-final.json
