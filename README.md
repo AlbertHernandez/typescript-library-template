@@ -1,69 +1,98 @@
-<h1 align="center">Typescript Library Skeleton</h1>
+<p align="center">
+  <a href="https://expressjs.com/" target="blank"><img src="images/typescript.png" alt="Express Logo" width="512" /></a>
+</p>
+
+<h1 align="center">⭐ Typescript Library Template ⭐</h1>
 
 <p align="center">
-  Skeleton for new typescript libraries
+  Template for new libraries based on Typescript with the Best Practices and Ready for Production
 </p>
 
 <p align="center">
-    <a href="https://github.com/AlbertHernandez/typescript-library-skeleton/actions/workflows/nodejs.yml?branch=main"><img src="https://github.com/AlbertHernandez/typescript-library-skeleton/actions/workflows/nodejs.yml/badge.svg?branch=main" alt="nodejs"/></a>
+  <a href="https://github.com/AlbertHernandez/typescript-library-template/actions/workflows/nodejs.yml?branch=main"><img src="https://github.com/AlbertHernandez/typescript-library-template/actions/workflows/nodejs.yml/badge.svg?branch=main" alt="nodejs"/></a>
+  <a href="https://nodejs.org/docs/latest-v20.x/api/index.html"><img src="https://img.shields.io/badge/node-20.x-green.svg" alt="node"/></a>
+  <a href="https://nodejs.org"><img src="https://img.shields.io/badge/supported_node-16.x_--_20.x-forestgreen.svg" alt="supported node"/></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/typescript-5.x-blue.svg" alt="typescript"/></a>
+  <a href="https://www.npmjs.com/"><img src="https://img.shields.io/badge/npm-10.x-red.svg" alt="npm"/></a>
+  <a href="https://swc.rs/"><img src="https://img.shields.io/badge/Compiler-SWC_-orange.svg" alt="swc"/></a>
+  <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Dockerized 🐳_-blue.svg" alt="docker"/></a>
 </p>
 
-## Table of Contents
+## 👀 Motivation
 
-* [Preparing environment to contribute](#preparing-environment)
-* [Playground](#playground)
-* [Building](#building)
-* [Testing](#testing)
-* [Linting](#linting)
-* [Contributing](#contributing)
+Starting a new library for NodeJS can be a bit frustrating, there are a lot of things to consider if we want to have a really good starting point where later we can iterate.
 
-## Preparing environment to contribute
+The main objective of this template is to provide a good base configuration for our NodeJS libraries that we can start using and move to production as soon as possible.
 
-This library has been designed to work with node v16 and npm 8. In order to configure your local environment you can run:
+## 🌟 What is including this template?
 
-```bash
-nvm install 18.0.0
-nvm use
-npm install npm@8.3.0 -g
-npm install
-```
+1. 🐳 Fully dockerized project ready to develop in the library.
+2. 👷 Use [SWC](https://swc.rs/) for compiling and running the tests of the library.
+3. 🐶 Integration with [husky](https://typicode.github.io/husky/) to ensure we have good quality and conventions while we are developing like:
+   - 💅 Running the linter over the files that have been changed
+   - 💬 Use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to ensure our commits have a convention.
+   - ✅ Run the tests automatically.
+   - ⚙️ Check our library does not have type errors with Typescript.
+4. 🧪 Testing with [Jest](https://jestjs.io/es-ES/).
 
-## Playground
+## 🧑‍💻 Developing
 
-This library offers a playground where we can play with the functions that we are developing
+The library is fully dockerized 🐳, if we want to start the app in **development mode**, we just need to run:
 
 ```bash
-npm run playground
+docker-compose up -d
 ```
 
-## Building
+This development mode with work with **hot-reload** and exposing a **debug port**, the `9229`, so later we can connect from our editor to it.
+
+Now, you should be able to start debugging configuring using your IDE. For example, if you are using vscode, you can create a `.vscode/launch.json` file with the following config:
+
+```json
+{
+  "version": "0.1.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to docker",
+      "restart": true,
+      "port": 9229,
+      "remoteRoot": "/project"
+    }
+  ]
+}
+```
+
+When you want to stop developing, you can stop the project running:
+
+```bash
+docker-compose down
+```
+
+## ⚙️ Building
 
 ```bash
 npm run build
 ```
 
-## Testing
+## ✅ Testing
 
-### Jest with Testing Library
+If you want to run the tests of the project, you can execute the following command:
 
 ```bash
 npm run test
 ```
 
-## Linting
+## 💅 Linting
 
-Run the linter
+To run the linter you can execute:
 
 ```bash
 npm run lint
 ```
 
-Fix lint issues automatically
+And for trying to fix lint issues automatically, you can run:
 
 ```bash
 npm run lint:fix
 ```
-
-## Contributing
-
-Contributions welcome! See the [Contributing Guide](https://github.com/AlbertHernandez/typescript-library-skeleton/blob/main/CONTRIBUTING.md).
