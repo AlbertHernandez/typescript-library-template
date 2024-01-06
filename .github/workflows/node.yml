@@ -2,6 +2,9 @@ name: Node
 
 on: [push]
 
+env:
+  default-node-version: 20.x
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [18.x, 20.x]
+        node-version: [18, ${{ env.default-node-version }}]
 
     steps:
       - name: Checkout 🛬
@@ -34,7 +37,3 @@ jobs:
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
           prnumber: ${{ steps.findPr.outputs.number }}
-      - uses: andresz1/size-limit-action@v1
-        if: steps.findPr.outputs.number
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
