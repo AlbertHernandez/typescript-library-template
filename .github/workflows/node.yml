@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [18, 20.x]
+        node-version: [18.x, 20.x]
 
     steps:
       - name: Checkout 🛬
@@ -36,7 +36,7 @@ jobs:
           echo Matrix: ${{ matrix.node-version }}
           echo default: ${{ env.default-node-version }}
       - name: Show coverage report in the PR 📊
-        if: steps.findPr.outputs.number && ${{ matrix.node-version }} == ${{ env.default-node-version }}
+        if: ${{ steps.findPr.outputs.number && matrix.node-version == env.default-node-version }}
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
           prnumber: ${{ steps.findPr.outputs.number }}
