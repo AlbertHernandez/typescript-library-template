@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  my-library:
+    container_name: my-library
+    restart: unless-stopped
+    build:
+      target: dev
+      context: .
+    ports:
+      - "9229:9229"
+    volumes:
+      - .:/project
+      - node_modules:/project/node_modules/
+
+volumes:
+  node_modules:
