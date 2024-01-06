@@ -11,17 +11,17 @@ jobs:
         node-version: [18.x, 20.x]
 
     steps:
-      - name: 🛬 Checkout
+      - name: Checkout 🛬
         uses: actions/checkout@v4
-      - name: ⚙️ Setup Node
+      - name: Setup Node ⚙️
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-      - name: 📥 Install dependencies
+      - name: Install dependencies 📥
         run: npm ci
-      - name: 📦 Build typescript
+      - name: Build typescript 📦
         run: npm run build
-      - name: 💅 Lint code
+      - name: Lint code 💅
         run: npm run lint
-      - name: ✅ Run tests
+      - name: Run tests ✅
         run: npm run test
