@@ -5,7 +5,7 @@
 <h1 align="center">⭐ Typescript Library Template ⭐</h1>
 
 <p align="center">
-  Template for new libraries based on Typescript with the Best Practices and Ready for Production
+  Template for new libraries based on Typescript with the Best Practices and Ready for Production. Hellu
 </p>
 
 <p align="center">
