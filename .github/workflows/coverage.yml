@@ -9,3 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ArtiomTr/jest-coverage-report-action@v2
+        if: github.actor != 'dependabot[bot]'
