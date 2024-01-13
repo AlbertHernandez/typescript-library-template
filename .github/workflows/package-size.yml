@@ -30,7 +30,7 @@ jobs:
         run:  |
           if [ -f base-package-size.txt ]; then
             echo "Getting package size from cache"
-            package_size=$(<base-package-size.txt.txt)
+            package_size=$(<base-package-size.txt)
           else
             echo "Package size not available in the cache"
             package_size=$(npm publish --dry-run 2>&1 | grep "unpacked size" | awk '{print $5 $6}')
