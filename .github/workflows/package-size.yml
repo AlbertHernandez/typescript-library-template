@@ -28,14 +28,9 @@ jobs:
       - name: 🎁 Calculate package size in ${{ github.base_ref }}
         id: package-base
         run:  |
-          if [ -f base-package-size.txt ]; then
-            echo "Getting package size from cache"
-            package_size=$(<base-package-size.txt)
-          else
-            echo "Package size not available in the cache"
-            npm ci
-            package_size=$(npm publish --dry-run 2>&1 | grep "unpacked size" | awk '{print $5 $6}')
-          fi
+          echo "Package size not available in the cache"
+          npm ci
+          package_size=$(npm publish --dry-run 2>&1 | grep "unpacked size" | awk '{print $5 $6}')
           echo "$package_size" > base-package-size.txt
           echo "package_size=$package_size" >> $GITHUB_OUTPUT
           echo "Package size: $package_size"
