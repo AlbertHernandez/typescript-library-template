@@ -49,6 +49,7 @@ jobs:
       - name: 🎁 Calculate package size in ${{ github.head_ref }}
         id: package-head
         run:  |
+          npm ci
           package_size=$(npm publish --dry-run 2>&1 | grep "unpacked size" | awk '{print $5 $6}')
           package_size_test=$(npm publish --dry-run)
           echo "Package size test: $package_size_test"
