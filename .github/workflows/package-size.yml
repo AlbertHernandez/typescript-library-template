@@ -46,7 +46,6 @@ jobs:
             package_size=$(<base-package-size.txt)
           else
             echo "Package size not available in the cache"
-            npm ci
             package_size=$(npm publish --dry-run 2>&1 | grep "unpacked size" | awk '{print $5 $6}')
           fi
           echo "$package_size" > base-package-size.txt
