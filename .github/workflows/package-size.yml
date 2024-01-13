@@ -50,6 +50,8 @@ jobs:
         id: package-head
         run:  |
           package_size=$(npm publish --dry-run 2>&1 | grep "unpacked size" | awk '{print $5 $6}')
+          package_size_test=$(npm publish --dry-run)
+          echo "Package size test: $package_size_test"
           echo "package_size=$package_size" >> $GITHUB_OUTPUT
           echo "Package size: $package_size"
   write-comment:
