@@ -35,6 +35,13 @@ The main objective of this template is to provide a good base configuration for 
    - ⚙️ Check our library does not have type errors with Typescript.
 4. 🧪 Testing with [Jest](https://jestjs.io/es-ES/).
 
+## 🤩 Other templates
+
+Are you thinking in start some new service in the NodeJS ecosystem? If you like this template there are others base on this you can check:
+
+- [Template for new Typescript Express Services](https://github.com/AlbertHernandez/express-typescript-service-template)
+- [Template for new NestJS Services](https://github.com/AlbertHernandez/nestjs-service-template)
+
 ## 🧑‍💻 Developing
 
 The library is fully dockerized 🐳, if we want to start the app in **development mode**, we just need to run:
