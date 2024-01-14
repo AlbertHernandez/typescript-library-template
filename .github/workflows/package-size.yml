@@ -19,7 +19,7 @@ jobs:
         id: commit
         run: |
           short=$(git rev-parse --short HEAD)
-          echo "short=$short" >> $GITHUB_OUTPUT
+          echo "short=$short" >> "$GITHUB_OUTPUT"
       - name: Setup Node ⚙️
         uses: actions/setup-node@v4
         with:
@@ -49,7 +49,7 @@ jobs:
             package_size=$(npm publish --dry-run 2>&1 | grep "unpacked size" | awk '{print $5 $6}')
           fi
           echo "$package_size" > base-package-size.txt
-          echo "package_size=$package_size" >> $GITHUB_OUTPUT
+          echo "package_size=$package_size" >> "$GITHUB_OUTPUT"
           echo "Package size: $package_size"
   calculate-head:
     runs-on: ubuntu-latest
@@ -76,7 +76,7 @@ jobs:
         id: package-head
         run:  |
           package_size=$(npm publish --dry-run 2>&1 | grep "unpacked size" | awk '{print $5 $6}')
-          echo "package_size=$package_size" >> $GITHUB_OUTPUT
+          echo "package_size=$package_size" >> "$GITHUB_OUTPUT"
           echo "Package size: $package_size"
   write-comment:
     runs-on: ubuntu-latest
