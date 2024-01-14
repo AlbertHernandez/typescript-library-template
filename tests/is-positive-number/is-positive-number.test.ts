@@ -9,7 +9,7 @@ describe("isPositiveNumber", () => {
     expect(isPositiveNumber(-1)).toBeFalsy();
   });
 
-  test("when is executed with 0 should return false", () => {
+  test("when is executed with 0 should return false hello", () => {
     expect(isPositiveNumber(0)).toBeFalsy();
   });
 });
