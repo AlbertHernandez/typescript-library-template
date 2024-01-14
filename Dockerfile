@@ -10,7 +10,7 @@ ENV NODE_ENV=development
 
 COPY package*.json $DIR
 
-RUN echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $DIR/.npmrc && \
+RUN echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > "$DIR/.npmrc" && \
     npm ci && \
     rm -f .npmrc
 
