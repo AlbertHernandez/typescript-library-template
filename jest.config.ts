@@ -1,8 +1,9 @@
-import type { Config } from "jest";
+import type { JestConfigWithTsJest } from "ts-jest";
+import { pathsToModuleNameMapper } from "ts-jest";
 
 const MIN_COVERAGE = 80;
 
-const config: Config = {
+const config: JestConfigWithTsJest = {
   coverageThreshold: {
     global: {
       statements: MIN_COVERAGE,
@@ -20,6 +21,9 @@ const config: Config = {
   collectCoverageFrom: ["src/**/*.ts"],
   setupFiles: ["<rootDir>.jest/set-env-vars.ts"],
   clearMocks: true,
+  moduleNameMapper: pathsToModuleNameMapper({
+    "@src/*": ["src/*"],
+  }),
 };
 
 export default config;
