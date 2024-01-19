@@ -15,6 +15,7 @@ RUN echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > "$DIR/.npmrc" && \
     rm -f .npmrc
 
 COPY tsconfig*.json $DIR
+COPY .swcrc $DIR
 COPY src $DIR/src
 COPY playground $DIR/playground
 
