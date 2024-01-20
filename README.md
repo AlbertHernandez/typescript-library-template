@@ -34,6 +34,7 @@ The main objective of this template is to provide a good base configuration for 
    - ✅ Run the tests automatically.
    - ⚙️ Check our library does not have type errors with Typescript.
 4. 🧪 Testing with [Jest](https://jestjs.io/es-ES/).
+5. 📌 Custom path aliases, where you can define your own paths (you will be able to use imports like `@src` instead of `../../../src`).
 
 ## 🤩 Other templates
 
