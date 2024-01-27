@@ -1,2 +1,3 @@
 npm run build
+find dist/index.js
 npm run test
