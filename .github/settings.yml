@@ -24,4 +24,10 @@ branches:
         require_code_owner_reviews: true
       required_status_checks:
         strict: true
+        contexts: []
       enforce_admins: false
+      required_linear_history: true
+      restrictions:
+        apps: []
+        users: []
+        teams: []
