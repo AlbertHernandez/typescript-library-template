@@ -2,7 +2,7 @@
 
 As a contributor, here are the guidelines you should follow:
 
-- [👔 Code of Conduct](../CODE_OF_CONDUCT.md)
+- [👔 Code of Conduct](CODE_OF_CONDUCT.md)
 - [⭐️ Steps](#-steps)
 - [💻️ Developing](../README.md#-developing)
 
