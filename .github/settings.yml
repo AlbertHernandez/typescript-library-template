@@ -15,19 +15,17 @@ repository:
   delete_branch_on_merge: true
   enable_automated_security_fixes: true
   enable_vulnerability_alerts: true
+
 branches:
   - name: main
     protection:
       required_pull_request_reviews:
-        required_approving_review_count: 3
+        required_approving_review_count: 1
         dismiss_stale_reviews: true
         require_code_owner_reviews: true
+        dismissal_restrictions: {}
       required_status_checks:
         strict: true
-        contexts: []
-      enforce_admins: false
-      required_linear_history: true
-      restrictions:
-        apps: []
-        users: []
-        teams: []
+        contexts: null
+      enforce_admins: null
+      restrictions: null
