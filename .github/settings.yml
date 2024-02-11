@@ -1,8 +1,5 @@
-# See https://github.com/probot/settings for all available settings.
-
-# General Repository Configuration
 repository:
   name: typescript-library-template
-  description: Template for new libraries based on Typescript with the Best Practices and Ready for Production
+  description: Template for new libraries based on Typescript with the Best Practices and Ready for Production.
   homepage: github.com/AlbertHernandez/typescript-library-template
   topics: nodejs, template, typescript, nodejs library template, typescript library
