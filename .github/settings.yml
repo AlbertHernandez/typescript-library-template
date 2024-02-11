@@ -6,7 +6,7 @@ repository:
   topics: nodejs, template, typescript, nodejs-library-template, typescript-library
   has_wiki: false
   private: false
-  has_issues: false
+  has_issues: true
   has_projects: false
   default_branch: main
   allow_squash_merge: true
