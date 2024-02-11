@@ -3,7 +3,7 @@ repository:
   name: typescript-library-template
   description: Template for new libraries based on Typescript with the Best Practices and Ready for Production
   homepage: github.com/AlbertHernandez/typescript-library-template
-  topics: nodejs, template, typescript, nodejs library template, typescript library
+  topics: nodejs, template, typescript, nodejs-library-template, typescript-library
   has_wiki: false
   private: false
   has_issues: false
