@@ -43,6 +43,7 @@ Are you thinking in start some new service in the NodeJS ecosystem? If you like 
 
 - [Template for new Typescript Express Services](https://github.com/AlbertHernandez/express-typescript-service-template)
 - [Template for new NestJS Services](https://github.com/AlbertHernandez/nestjs-service-template)
+- [Template for new GitHub Actions based on NodeJS](https://github.com/AlbertHernandez/github-action-nodejs-template)
 
 ## 🧑‍💻 Developing
 
