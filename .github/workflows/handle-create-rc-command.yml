@@ -17,6 +17,10 @@ jobs:
         uses: ./.github/actions/setup-node
         with:
           npm_token: ${{ secrets.NPM_TOKEN }}
+      - uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          tag: ${{ github.event.client_payload.pull_request.head.ref }}
       - name: Mark command as done ✅
         uses: peter-evans/create-or-update-comment@v4
         with:
