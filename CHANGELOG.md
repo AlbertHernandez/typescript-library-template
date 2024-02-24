@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.1](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.0.0...v1.0.1) (2024-02-24)
+
+
+### Bug Fixes
+
+* apply yml lint suggestions ([86e009e](https://github.com/AlbertHernandez/typescript-library-template/commit/86e009e08ff7ad53f3f148251c35f032ea8fb9b5))
+* change how to auth in npm ([e9966f9](https://github.com/AlbertHernandez/typescript-library-template/commit/e9966f9846bd97dccc7d418c85980c72edd79ab3))
+* optimize release please ([f91790a](https://github.com/AlbertHernandez/typescript-library-template/commit/f91790a2e28e14ff4309b36b3809e1a8f507bc66))
+
 ## 1.0.0 (2024-02-24)
 
 
