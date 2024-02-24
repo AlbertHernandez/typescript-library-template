@@ -1,3 +1,12 @@
+## [1.5.6](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.5...v1.5.6) (2024-02-24)
+
+
+### Bug Fixes
+
+* separate in two jobs the release ([a36d93f](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/a36d93f365ee0d20aa4a55dcee637953abdc9d40))
+
+
+
 ## [1.5.5](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.4...v1.5.5) (2024-02-24)
 
 
@@ -32,17 +41,6 @@
 ### Bug Fixes
 
 * change number ([8a432a9](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/8a432a9dded9a7340a26156f63a0085220c761d8))
-
-
-
-## [1.5.1](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.0...v1.5.1) (2024-02-24)
-
-
-### Bug Fixes
-
-* change number ([6856b30](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/6856b300c282788947db7995b56386a02c6f8df4))
-* use another release action ([7ca772e](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/7ca772ea688af1c375625e382c285ff6db6ad539))
-* use release v3 ([10bf747](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/10bf747c11dd51ac76f04b1d86824be4e449d737))
 
 
 
