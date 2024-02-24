@@ -17,6 +17,8 @@ jobs:
       - name: Running Release Please ⭐️
         uses: google-github-actions/release-please-action@v4
         id: release
+        with:
+          release-type: node
       - name: Checkout 🛬
         if: ${{ steps.release.outputs.release_created }}
         uses: actions/checkout@v4
