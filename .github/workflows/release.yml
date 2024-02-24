@@ -29,6 +29,8 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Checkout 🛬
+        uses: actions/checkout@v4
       - name: Create major and minor tags 📍
         run: |
           TAG=${{ needs.update-library-version.outputs.tag }}
