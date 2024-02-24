@@ -1,6 +1,6 @@
 import { isPositiveNumber } from "../src";
 
-const value = 2;
+const value = 1;
 
 const result = {
   value,
