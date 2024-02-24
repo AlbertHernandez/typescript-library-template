@@ -21,6 +21,7 @@ jobs:
           PULL_REQUEST: ${{ toJson(github.event.client_payload.pull_request) }}
         run: |
           echo "HEAD: ${{ github.event.client_payload.pull_request.head.ref }}"
+          echo "SHA: ${{ github.event.client_payload.pull_request.head.sha }}"
           echo "PR: $PULL_REQUEST"
           echo "Client payload: $PAYLOAD_CONTEXT"
 
