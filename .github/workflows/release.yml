@@ -44,3 +44,24 @@ jobs:
           tag_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Cache Dependencies ⌛️
+        if: steps.changelog.outputs.tag
+        uses: actions/cache@v4
+        id: cache-node-modules
+        with:
+          path: 'node_modules'
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('package*.json') }}-${{ hashFiles('.github/workflows/release.yml') }}-node-20.9
+      - name: Authenticate npm 🔑
+        if: steps.changelog.outputs.tag
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      - name: Setup Node ⚙️
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+      - name: Install dependencies 📥
+        if: steps.changelog.outputs.tag
+        run: npm ci
+      - name: Publish to NPM 🚀
+        if: steps.changelog.outputs.tag
+        run: npm publish
