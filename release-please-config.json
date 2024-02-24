@@ -15,57 +15,63 @@
   "changelog-sections": [
     {
       "type": "feat",
-      "section": "✨ New Features"
+      "section": "✨ New Features",
+      "hidden": false
     },
     {
       "type": "fix",
-      "section": "🐛 Bug Fixes"
+      "section": "🐛 Bug Fixes",
+      "hidden": false
     },
     {
       "type": "chore",
-      "hidden": true,
-      "section": "🧹 Chore"
+      "section": "🧹 Chore",
+      "hidden": true
     },
     {
       "type": "docs",
-      "hidden": true,
-      "section": "📚 Documentation"
+      "section": "📚 Documentation",
+      "hidden": true
     },
     {
       "type": "perf",
-      "section": "🚀 Performance"
+      "section": "🚀 Performance",
+      "hidden": false
     },
     {
       "type": "build",
-      "hidden": true,
-      "section": "🛠️ Build"
+      "section": "🛠️ Build",
+      "hidden": false
     },
     {
       "type": "deps",
-      "section": "📦 Dependencies"
+      "section": "📦 Dependencies",
+      "hidden": false
     },
     {
       "type": "ci",
-      "hidden": true,
-      "section": "🚦 CI"
+      "section": "🚦 CI",
+      "hidden": true
     },
     {
       "type": "refactor",
-      "section": "🔄 Refactoring"
+      "section": "🔄 Refactoring",
+      "hidden": false
     },
     {
       "type": "revert",
-      "section": "🔙 Reverts"
+      "section": "🔙 Reverts",
+      "hidden": false
     },
     {
       "type": "style",
-      "hidden": true,
-      "section": "🎨 Styling"
+      "section": "🎨 Styling",
+      "hidden": true
     },
     {
       "type": "test",
-      "hidden": true,
-      "section": "🧪 Tests"
+      "section": "🧪 Tests",
+      "hidden": true
     }
   ]
 }
