@@ -22,6 +22,9 @@ jobs:
           npm_token: ${{ secrets.NPM_TOKEN }}
       - name: Update library version
         run: npm version --allow-same-version --no-git-tag-version prerelease --preid=rc.${{ github.event.client_payload.pull_request.head.sha }}
+      - name: get-npm-version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@v1.3.1
       - uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_TOKEN }}
@@ -39,5 +42,9 @@ jobs:
             > Clients can use it running:
             > ```bash
             > npm install --save typescript-library-template-example@${{ github.event.client_payload.pull_request.head.ref }}
+            > ```
+            > OR
+            > ```bash
+            > npm install --save ${{ steps.package-version.outputs.current-version }}
             > ```
           reactions: hooray
