@@ -19,8 +19,6 @@ jobs:
       - name: Create changelog 📝
         id: changelog
         uses: TriPSs/conventional-changelog-action@v5
-        with:
-          skip-version-file: "true"
       - name: Create major and minor tags 📍
         if: steps.changelog.outputs.tag
         run: |
