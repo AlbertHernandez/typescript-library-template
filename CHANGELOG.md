@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.5.0...v1.5.1) (2024-02-24)
+
+
+### Bug Fixes
+
+* change number ([6856b30](https://github.com/AlbertHernandez/typescript-library-template/commit/6856b300c282788947db7995b56386a02c6f8df4))
+
 ## [1.5.0](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.4.1...v1.5.0) (2024-02-24)
 
 
