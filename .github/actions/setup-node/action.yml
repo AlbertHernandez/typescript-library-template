@@ -7,6 +7,10 @@ inputs:
     required: false
     type: string
     default: '20'
+  npm_token:
+    description: 'NPM Token'
+    required: true
+    type: string
 
 runs:
   using: "composite"
@@ -14,7 +18,7 @@ runs:
     - name: Authenticate npm 🔑
       if: steps.changelog.outputs.tag
       shell: bash
-      run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      run: echo "//registry.npmjs.org/:_authToken=${{ inputs.npm_token }}" > ~/.npmrc
     - name: Cache Dependencies ⌛️
       uses: actions/cache@v4
       id: cache-node-modules

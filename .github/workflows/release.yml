@@ -39,6 +39,8 @@ jobs:
           git push -f origin $minor
       - name: Setup Node ⚙️
         uses: ./.github/actions/setup-node
+        with:
+          npm_token: ${{ secrets.NPM_TOKEN }}
       - name: Publish to NPM 🚀
         if: steps.changelog.outputs.tag
         run: npm publish

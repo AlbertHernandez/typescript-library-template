@@ -20,6 +20,7 @@ jobs:
         uses: ./.github/actions/setup-node
         with:
           version: ${{ matrix.node-version }}
+          npm_token: ${{ secrets.NPM_TOKEN }}
       - name: Build typescript 📦
         run: npm run build && find dist/index.js
       - name: Lint code 💅
