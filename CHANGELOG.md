@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.3](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.0.2...v1.0.3) (2024-02-24)
+
+
+### 🐛 Bug Fixes
+
+* add manifest ([7861d97](https://github.com/AlbertHernandez/typescript-library-template/commit/7861d97521122dd54e863b4c4de2815e891c85aa))
+* add release type as node ([69587da](https://github.com/AlbertHernandez/typescript-library-template/commit/69587da583a71ab3379ed1999a136dc18357abef))
+* do not include component tags ([92bb3a5](https://github.com/AlbertHernandez/typescript-library-template/commit/92bb3a58d7b7f653e02f5ac980d08d5c3cc3bff4))
+* release please publish to npm ([d3ed483](https://github.com/AlbertHernandez/typescript-library-template/commit/d3ed4833ba1000268c17edb7d65adde2a6b9fac0))
+
 ## [1.0.2](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.0.1...v1.0.2) (2024-02-24)
 
 
