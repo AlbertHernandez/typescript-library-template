@@ -1,3 +1,12 @@
+## [1.5.4](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.3...v1.5.4) (2024-02-24)
+
+
+### Bug Fixes
+
+* publish to npm automatically ([dc54797](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/dc54797d900a28a281eb62f435e813cd02be32fb))
+
+
+
 ## [1.5.3](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.2...v1.5.3) (2024-02-24)
 
 
