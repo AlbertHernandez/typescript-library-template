@@ -38,6 +38,7 @@ jobs:
           git push -f origin $major
           git push -f origin $minor
       - name: Setup Node ⚙️
+        if: steps.changelog.outputs.tag
         uses: ./.github/actions/setup-node
         with:
           npm_token: ${{ secrets.NPM_TOKEN }}
