@@ -29,7 +29,6 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
           tag: ${{ github.event.client_payload.pull_request.head.ref }}
-          dry-run: true
       - name: Mark command as done ✅
         uses: peter-evans/create-or-update-comment@v4
         with:
