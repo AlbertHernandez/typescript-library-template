@@ -11,6 +11,7 @@ rules:
       /.github/workflows/*.yaml
       /.github/workflows/*.yml
       /.github/settings.yml
+      /.github/actions/setup-node/action.yml
   truthy:
     ignore: |
       /.github/workflows/*.yaml
