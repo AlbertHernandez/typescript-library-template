@@ -1,6 +1,6 @@
 {
   "name": "typescript-library-template",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Template for new typescript libraries",
   "main": "dist/index.js",
   "author": "alberthernandezdev@gmail.com",
