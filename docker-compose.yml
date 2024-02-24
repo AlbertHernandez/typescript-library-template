@@ -11,4 +11,4 @@ services:
     ports:
       - "9229:9229"
     volumes:
-      - .:/project
+      - .:/app
