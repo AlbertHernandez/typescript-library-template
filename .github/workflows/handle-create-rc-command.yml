@@ -6,7 +6,7 @@ on:
     types: [create-rc-command]
 
 jobs:
-  update-library-version:
+  create-rc:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛬
@@ -16,37 +16,28 @@ jobs:
       - name: Log details
         run: |
           echo "Commit SHA: ${{ github.event.client_payload.pull_request.head.sha }}"
+      - name: Setup Node ⚙️
+        uses: ./.github/actions/setup-node
+        with:
+          npm_token: ${{ secrets.NPM_TOKEN }}
+      - name: Update library version
+        run: npm version --allow-same-version --no-git-tag-version prerelease --preid=rc.${{ github.event.client_payload.pull_request.head.sha }}
+      - uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          tag: ${{ github.event.client_payload.pull_request.head.ref }}
+          dry-run: true
+      - name: Mark command as done ✅
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          repository: ${{ github.event.client_payload.github.payload.repository.full_name }}
+          comment-id: ${{ github.event.client_payload.github.payload.comment.id }}
+          body: |
+            ## 🐣 The new release candidate is ready to be used
 
-
-#  release-rc:
-#    runs-on: ubuntu-latest
-#    needs: update-library-version
-#    if: ${{ needs.update-library-version.outputs.tag }}
-#    steps:
-#      - name: Checkout 🛬
-#        uses: actions/checkout@v4
-#        with:
-#          ref: ${{ github.event.client_payload.pull_request.head.ref }}
-#      - name: Setup Node ⚙️
-#        uses: ./.github/actions/setup-node
-#        with:
-#          npm_token: ${{ secrets.NPM_TOKEN }}
-#      - uses: JS-DevTools/npm-publish@v3
-#        with:
-#          token: ${{ secrets.NPM_TOKEN }}
-#          tag: ${{ github.event.client_payload.pull_request.head.ref }}
-#          dry-run: true
-#      - name: Mark command as done ✅
-#        uses: peter-evans/create-or-update-comment@v4
-#        with:
-#          repository: ${{ github.event.client_payload.github.payload.repository.full_name }}
-#          comment-id: ${{ github.event.client_payload.github.payload.comment.id }}
-#          body: |
-#            ## 🐣 The new release candidate is ready to be used
-#
-#            Clients can use it by running:
-#
-#            ```bash
-#            npm install --save typescript-library-template-example@${{ github.event.client_payload.pull_request.head.ref }}
-#            ```
-#          reactions: hooray
+            > [!TIP]
+            > Clients can use it running:
+            > ```bash
+            > npm install --save typescript-library-template-example@${{ github.event.client_payload.pull_request.head.ref }}
+            > ```
+          reactions: hooray
