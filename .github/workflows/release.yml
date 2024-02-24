@@ -1,0 +1,48 @@
+---
+name: 'Release'
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout 🛬
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_GITHUB_TOKEN }}
+      - name: Create changelog 📝
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v5
+        with:
+          skip-version-file: "true"
+      - name: Create major and minor tags 📍
+        if: steps.changelog.outputs.tag
+        run: |
+          TAG=${{ steps.changelog.outputs.tag }}
+          major=${TAG%%.*}
+          minor=${TAG%.*}
+
+          echo "Current tag $TAG"
+          echo "Major version: $major"
+          echo "Minor version: $minor"
+
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git tag -fa $major -m "Release v${major}"
+          git tag -fa $minor -m "Release v${minor}"
+
+          git push -f origin $major
+          git push -f origin $minor
+      - name: Release 🚀
+        if: steps.changelog.outputs.tag
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.changelog.outputs.tag }}
+          body: ${{ steps.changelog.outputs.clean_changelog }}
+          token: ${{ secrets.GITHUB_TOKEN }}
