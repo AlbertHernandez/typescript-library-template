@@ -13,6 +13,7 @@ runs:
   steps:
     - name: Authenticate npm 🔑
       if: steps.changelog.outputs.tag
+      shell: bash
       run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
     - name: Cache Dependencies ⌛️
       uses: actions/cache@v4
