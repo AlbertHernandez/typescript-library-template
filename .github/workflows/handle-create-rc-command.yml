@@ -20,6 +20,12 @@ jobs:
         uses: ./.github/actions/setup-node
         with:
           npm_token: ${{ secrets.NPM_TOKEN }}
+      - name: Normalize npm tag
+        id: npm
+        run: |
+          npm_tag=$(echo ${{ github.event.client_payload.pull_request.head.sha }} | sed 's/\//-/g')
+          echo "NPM Tag: $npm_tag"
+          echo "tag=$npm_tag" >> "$GITHUB_OUTPUT"
       - name: Update library version
         run: npm version --allow-same-version --no-git-tag-version prerelease --preid=rc.${{ github.event.client_payload.pull_request.head.sha }}
       - name: get-npm-version
@@ -28,7 +34,7 @@ jobs:
       - uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_TOKEN }}
-          tag: ${{ github.event.client_payload.pull_request.head.ref }}
+          tag: ${{ steps.npm.outputs.tag }}
       - name: Mark command as done ✅
         uses: peter-evans/create-or-update-comment@v4
         with:
@@ -40,7 +46,7 @@ jobs:
             > [!TIP]
             > Clients can use it running:
             > ```bash
-            > npm install --save typescript-library-template-example@${{ github.event.client_payload.pull_request.head.ref }}
+            > npm install --save typescript-library-template-example@${{ steps.npm.outputs.tag }}
             > ```
             > OR
             > ```bash
