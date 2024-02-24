@@ -1,3 +1,12 @@
+## [1.5.9](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.8...v1.5.9) (2024-02-24)
+
+
+### Bug Fixes
+
+* force new version ([db07598](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/db075981b66dcaa2a44360b7d34522312ff0884a))
+
+
+
 ## [1.5.8](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.7...v1.5.8) (2024-02-24)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * reuse setup node action ([#100](https://github.com/AlbertHernandez/typescript-library-skeleton/issues/100)) ([f7438ae](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/f7438aed1d00015a210db40040ddac875f2f7fdc))
-
-
-
-## [1.5.4](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.3...v1.5.4) (2024-02-24)
-
-
-### Bug Fixes
-
-* publish to npm automatically ([dc54797](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/dc54797d900a28a281eb62f435e813cd02be32fb))
 
 
 
