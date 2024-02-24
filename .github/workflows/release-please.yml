@@ -20,8 +20,11 @@ jobs:
         with:
           release-type: node
       - name: Checkout 🛬
-        uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v4
+      - name: Authenticate npm 🔑
+        if: ${{ steps.release.outputs.release_created }}
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - name: Setup Node ⚙️
         if: ${{ steps.release.outputs.release_created }}
         uses: actions/setup-node@v4
@@ -34,5 +37,4 @@ jobs:
       - name: Publish to NPM 🚀
         if: ${{ steps.release.outputs.release_created }}
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
