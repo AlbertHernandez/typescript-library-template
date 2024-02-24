@@ -16,10 +16,13 @@ jobs:
         with:
           ref: ${{ github.event.client_payload.pull_request.head.ref }}
       - name: Log
+        env:
+          PAYLOAD_CONTEXT: ${{ toJson(github.event.client_payload) }}
+          PULL_REQUEST: ${{ toJson(github.event.client_payload.pull_request)) }}
         run: |
           echo "HEAD: ${{ github.event.client_payload.pull_request.head.ref }}"
-          echo "PR: ${{ toJson(github.event.client_payload.pull_request) }}"
-          echo "Client payload: ${{ toJson(github.event.client_payload) }}"
+          echo "PR: $PULL_REQUEST"
+          echo "Client payload: $PAYLOAD_CONTEXT"
 
 #  release-rc:
 #    runs-on: ubuntu-latest
