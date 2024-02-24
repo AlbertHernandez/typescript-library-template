@@ -23,7 +23,7 @@ jobs:
       - name: Normalize npm tag
         id: npm
         run: |
-          npm_tag=$(echo ${{ github.event.client_payload.pull_request.head.sha }} | sed 's/\//-/g')
+          npm_tag=$(echo ${{ github.event.client_payload.pull_request.head.ref }} | sed 's/\//-/g')
           echo "NPM Tag: $npm_tag"
           echo "tag=$npm_tag" >> "$GITHUB_OUTPUT"
       - name: Update library version
