@@ -3,6 +3,7 @@
   "version": "1.5.7",
   "description": "Template for new typescript libraries",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "alberthernandezdev@gmail.com",
   "license": "MIT",
   "bugs": {
@@ -31,7 +32,7 @@
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
     "validate-typescript": "tsc -p tsconfig.prod.json --noEmit",
-    "generate-dist": "swc ./src -d dist --strip-leading-paths",
+    "generate-dist": "tsc --build tsconfig.prod.json",
     "build:clean": "rimraf dist; exit 0",
     "prepare": "husky"
   },

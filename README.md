@@ -27,7 +27,7 @@ The main objective of this template is to provide a good base configuration for 
 ## 🌟 What is including this template?
 
 1. 🐳 Fully dockerized project ready to develop in the library.
-2. 👷 Use [SWC](https://swc.rs/) for compiling and running the tests of the library.
+2. 👷 Use [SWC](https://swc.rs/) for running the tests of the library.
 3. 🐶 Integration with [husky](https://typicode.github.io/husky/) to ensure we have good quality and conventions while we are developing like:
    - 💅 Running the linter over the files that have been changed
    - 💬 Use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to ensure our commits have a convention.
