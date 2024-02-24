@@ -18,7 +18,7 @@ jobs:
       - name: Log
         env:
           PAYLOAD_CONTEXT: ${{ toJson(github.event.client_payload) }}
-          PULL_REQUEST: ${{ toJson(github.event.client_payload.pull_request)) }}
+          PULL_REQUEST: ${{ toJson(github.event.client_payload.pull_request) }}
         run: |
           echo "HEAD: ${{ github.event.client_payload.pull_request.head.ref }}"
           echo "PR: $PULL_REQUEST"
