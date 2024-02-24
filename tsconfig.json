@@ -10,6 +10,7 @@
     "inlineSources": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
+    "declaration": true,
     "paths": {
       "@src/*": ["src/*"]
     }
