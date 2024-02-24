@@ -1,3 +1,13 @@
+## [1.5.3](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.2...v1.5.3) (2024-02-24)
+
+
+### Bug Fixes
+
+* change number ([020c4ac](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/020c4acbd00dccf1b74ed6bc0a988d079871687c))
+* do not skip version file ([0d2b6b7](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/0d2b6b7592661a5bc589cfeb65ad24bafa8b8337))
+
+
+
 ## [1.5.2](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.1...v1.5.2) (2024-02-24)
 
 
