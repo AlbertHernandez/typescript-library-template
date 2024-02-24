@@ -36,6 +36,11 @@ The main objective of this template is to provide a good base configuration for 
 4. 🧪 Testing with [Jest](https://jestjs.io/es-ES/).
 5. 📌 Custom path aliases, where you can define your own paths (you will be able to use imports like `@src` instead of `../../../src`).
 6. 🚀 CI/CD using GitHub Actions, helping ensure a good quality of our code and providing useful insights about dependencies, security vulnerabilities and others.
+7. 🥷 Fully automatized release process. You just need to merge into `main` branch using conventional commits and that's all. Automatically we will:
+   - 📍 Create the tags associated to your change
+   - 📝 Update the changelog
+   - 📦 Create a release
+   - ☁️ Publish the new version to NPM
 
 ## 🤩 Other templates
 
