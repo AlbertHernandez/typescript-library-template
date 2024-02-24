@@ -18,8 +18,8 @@ jobs:
       - name: Log
         run: |
           echo "HEAD: ${{ github.event.client_payload.pull_request.head.ref }}"
-          echo "PR: ${{ github.event.client_payload.pull_request }}"
-          echo "Client payload: ${{ github.event.client_payload }}"
+          echo "PR: ${{ fromJson(github.event.client_payload.pull_request) }}"
+          echo "Client payload: ${{ fromJson(github.event.client_payload) }}"
 
 #  release-rc:
 #    runs-on: ubuntu-latest
