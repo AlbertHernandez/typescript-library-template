@@ -28,7 +28,7 @@ jobs:
         id: cache-node-modules
         with:
           path: 'node_modules'
-          key: ${{ runner.os }}-node_modules-${{ hashFiles('package*.json') }}-${{ hashFiles('.github/workflows/node.yml') }}-node-20.9
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('package*.json') }}-${{ hashFiles('.github/workflows/release-please.yml') }}-node-20.9
       - name: Authenticate npm 🔑
         if: ${{ steps.release.outputs.release_created }}
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
@@ -45,4 +45,3 @@ jobs:
       - name: Publish to NPM 🚀
         if: ${{ steps.release.outputs.release_created }}
         run: npm publish
-
