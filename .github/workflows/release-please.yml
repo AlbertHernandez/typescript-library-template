@@ -22,6 +22,13 @@ jobs:
       - name: Checkout 🛬
         if: ${{ steps.release.outputs.release_created }}
         uses: actions/checkout@v4
+      - name: Cache Dependencies ⌛️
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/cache@v4
+        id: cache-node-modules
+        with:
+          path: 'node_modules'
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('package*.json') }}-${{ hashFiles('.github/workflows/node.yml') }}-node-20.9
       - name: Authenticate npm 🔑
         if: ${{ steps.release.outputs.release_created }}
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
@@ -31,9 +38,10 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           registry-url: 'https://registry.npmjs.org'
+          cache: npm
       - name: Install dependencies 📥
         if: ${{ steps.release.outputs.release_created }}
-        uses: bahmutov/npm-install@v1
+        run: npm ci
       - name: Publish to NPM 🚀
         if: ${{ steps.release.outputs.release_created }}
         run: npm publish
