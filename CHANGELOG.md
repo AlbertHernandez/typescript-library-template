@@ -1,3 +1,12 @@
+## [1.5.15](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.14...v1.5.15) (2024-02-25)
+
+
+### Bug Fixes
+
+* create github release automatically ([929d0b1](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/929d0b181eff95956289503da050f827cb389f28))
+
+
+
 ## [1.5.14](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.13...v1.5.14) (2024-02-25)
 
 
@@ -32,15 +41,6 @@
 
 * change readme ([a1e1ed5](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/a1e1ed50324867efb83c300a9e2061efaceacd82))
 * unify in just one job ([fba729f](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/fba729f79585d0d1a142041f2aab5d2e9afbb079))
-
-
-
-## [1.5.10](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.9...v1.5.10) (2024-02-25)
-
-
-### Bug Fixes
-
-* add hello world ([#103](https://github.com/AlbertHernandez/typescript-library-skeleton/issues/103)) ([8d3cf85](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/8d3cf858c409f14dda93560b6d3468e191bfe434))
 
 
 
