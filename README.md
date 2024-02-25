@@ -34,8 +34,9 @@ The main objective of this template is to provide a good base configuration for 
 4. 🧪 Testing with [Jest](https://jestjs.io/es-ES/).
 5. 📌 Custom path aliases, where you can define your own paths (you will be able to use imports like `@src` instead of `../../../src`).
 6. 🚀 CI/CD using GitHub Actions, helping ensure a good quality of our code and providing useful insights about dependencies, security vulnerabilities and others.
-7. 🐣 Automatic release candidate, you just need to create a Pull Request and an ephemeral version will be created for it. [Here](https://github.com/AlbertHernandez/typescript-library-template/pull/104#issuecomment-1963054128) is an example.
-8. 🥷 Fully automatized release process. You just need to merge into `main` branch using conventional commits and that's all. Automatically we will:
+7. 🤖 ChatOps approach to help creating manually release candidates, getting help and more things. [Here](https://github.com/AlbertHernandez/typescript-library-template/pull/105#issuecomment-1963059727) is an example.
+8. 🐣 Automatic release candidate, you just need to create a Pull Request and an ephemeral version will be created for it. [Here](https://github.com/AlbertHernandez/typescript-library-template/pull/105#issuecomment-1963059409) is an example.
+9. 🥷 Fully automatized release process. You just need to merge into `main` branch using conventional commits and that's all. Automatically we will:
    - 📍 Create the tags associated to your change
    - 📝 Update the changelog
    - 📦 Create a release
