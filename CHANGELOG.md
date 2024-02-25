@@ -1,3 +1,13 @@
+## [1.5.11](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.10...v1.5.11) (2024-02-25)
+
+
+### Bug Fixes
+
+* change readme ([a1e1ed5](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/a1e1ed50324867efb83c300a9e2061efaceacd82))
+* unify in just one job ([fba729f](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/fba729f79585d0d1a142041f2aab5d2e9afbb079))
+
+
+
 ## [1.5.10](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.9...v1.5.10) (2024-02-25)
 
 
@@ -31,15 +41,6 @@
 ### Bug Fixes
 
 * add checkout step ([b327bb2](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/b327bb2b7202bf152330b99b255eaab542be4363))
-
-
-
-## [1.5.6](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.5...v1.5.6) (2024-02-24)
-
-
-### Bug Fixes
-
-* separate in two jobs the release ([a36d93f](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/a36d93f365ee0d20aa4a55dcee637953abdc9d40))
 
 
 
