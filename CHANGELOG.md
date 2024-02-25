@@ -1,3 +1,12 @@
+## [1.5.10](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.9...v1.5.10) (2024-02-25)
+
+
+### Bug Fixes
+
+* add hello world ([#103](https://github.com/AlbertHernandez/typescript-library-skeleton/issues/103)) ([8d3cf85](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/8d3cf858c409f14dda93560b6d3468e191bfe434))
+
+
+
 ## [1.5.9](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.8...v1.5.9) (2024-02-24)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * separate in two jobs the release ([a36d93f](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/a36d93f365ee0d20aa4a55dcee637953abdc9d40))
-
-
-
-## [1.5.5](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.4...v1.5.5) (2024-02-24)
-
-
-### Bug Fixes
-
-* reuse setup node action ([#100](https://github.com/AlbertHernandez/typescript-library-skeleton/issues/100)) ([f7438ae](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/f7438aed1d00015a210db40040ddac875f2f7fdc))
 
 
 
