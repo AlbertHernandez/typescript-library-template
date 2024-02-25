@@ -1,3 +1,12 @@
+## [1.5.12](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.11...v1.5.12) (2024-02-25)
+
+
+### Bug Fixes
+
+* wrong tag ([7a3cb20](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/7a3cb20f2c3930ff77499f8d81dbffac66dfcc39))
+
+
+
 ## [1.5.11](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.10...v1.5.11) (2024-02-25)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * force new version ([253d777](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/253d777925f5f3a89c8c9736247a568d2e669f7d))
-
-
-
-## [1.5.7](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.6...v1.5.7) (2024-02-24)
-
-
-### Bug Fixes
-
-* add checkout step ([b327bb2](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/b327bb2b7202bf152330b99b255eaab542be4363))
 
 
 
