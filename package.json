@@ -1,6 +1,6 @@
 {
   "name": "typescript-library-template-example",
-  "version": "1.5.13",
+  "version": "1.5.14",
   "description": "Template for new typescript libraries",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
