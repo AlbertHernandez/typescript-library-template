@@ -51,6 +51,7 @@ runs:
         tag: ${{ steps.npm.outputs.tag }}
     - name: Get current date 🕒
       id: date
+      shell: bash
       run: |
         utc=$(date -u +"%b %-d, %Y at %-I:%M%p (UTC)")
         echo "utc=$utc" >> "$GITHUB_OUTPUT"
