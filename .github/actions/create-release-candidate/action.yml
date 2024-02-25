@@ -58,7 +58,7 @@ runs:
     - name: Get short commit sha 🔑
       shell: bash
       run: |
-        short_sha=$(echo "$inputs.commit-sha" | cut -c 1-7)
+        short_sha=$(echo "${{ inputs.commit-sha }}" | cut -c 1-7)
         echo "sha=$short_sha" >> "$GITHUB_OUTPUT"
       id: short-sha
     - uses: marocchino/sticky-pull-request-comment@v2
