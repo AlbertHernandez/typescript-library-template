@@ -1,3 +1,12 @@
+## [1.5.13](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.12...v1.5.13) (2024-02-25)
+
+
+### Bug Fixes
+
+* change number ([#104](https://github.com/AlbertHernandez/typescript-library-skeleton/issues/104)) ([461c081](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/461c0813fcedfc32f3ea5ab28b5dd893ab51715d))
+
+
+
 ## [1.5.12](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.11...v1.5.12) (2024-02-25)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * force new version ([db07598](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/db075981b66dcaa2a44360b7d34522312ff0884a))
-
-
-
-## [1.5.8](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.7...v1.5.8) (2024-02-24)
-
-
-### Bug Fixes
-
-* force new version ([253d777](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/253d777925f5f3a89c8c9736247a568d2e669f7d))
 
 
 
