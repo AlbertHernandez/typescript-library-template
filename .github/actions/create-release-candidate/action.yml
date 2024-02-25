@@ -1,0 +1,48 @@
+---
+name: 'Create release candidate'
+
+inputs:
+  branch:
+    description: 'Current branch name'
+    required: true
+    type: string
+  commit-sha:
+    description: 'SHA of lastest commit'
+    required: true
+    type: string
+  npm-token:
+    description: 'NPM Token'
+    required: true
+    type: string
+outputs:
+  package-version:
+    description: "The new package version"
+    value: ${{ steps.package-version.outputs.current-version }}
+  npm-tag:
+    description: "Tag associated to the npm release candidate"
+    value: ${{ steps.npm.outputs.tag }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Node ⚙️
+      uses: ./.github/actions/setup-node
+      with:
+        npm_token: ${{ inputs.npm-token }}
+    - name: Build typescript 📦
+      run: npm run build && find dist/index.js
+    - name: Normalize npm tag
+      id: npm
+      run: |
+        npm_tag=$(echo ${{ inputs.branch }} | sed 's/\//-/g')
+        echo "NPM Tag: $npm_tag"
+        echo "tag=$npm_tag" >> "$GITHUB_OUTPUT"
+    - name: Update library version
+      run: npm version --allow-same-version --no-git-tag-version prerelease --preid=rc.${{ inputs.commit-sha }}
+    - name: get-npm-version
+      id: package-version
+      uses: martinbeentjes/npm-get-version-action@v1.3.1
+    - uses: JS-DevTools/npm-publish@v3
+      with:
+        token: ${{ inputs.npm-token }}
+        tag: ${{ steps.npm.outputs.tag }}
