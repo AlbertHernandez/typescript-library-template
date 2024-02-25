@@ -7,10 +7,8 @@ on:
       - main
 
 jobs:
-  update-library-version:
+  release:
     runs-on: ubuntu-latest
-    outputs:
-      tag: ${{ steps.changelog.outputs.tag }}
     permissions:
       contents: write
     steps:
@@ -21,17 +19,8 @@ jobs:
       - name: Create changelog 📝
         id: changelog
         uses: TriPSs/conventional-changelog-action@v5
-
-  release:
-    needs: update-library-version
-    if: ${{ needs.update-library-version.outputs.tag }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout 🛬
-        uses: actions/checkout@v4
       - name: Create major and minor tags 📍
+        if: ${{ steps.changelog.outputs.tag }}
         run: |
           TAG=${{ needs.update-library-version.outputs.tag }}
           major=${TAG%%.*}
@@ -49,8 +38,10 @@ jobs:
           git push -f origin $major
           git push -f origin $minor
       - name: Setup Node ⚙️
+        if: ${{ steps.changelog.outputs.tag }}
         uses: ./.github/actions/setup-node
         with:
           npm_token: ${{ secrets.NPM_TOKEN }}
       - name: Publish to NPM 🚀
+        if: ${{ steps.changelog.outputs.tag }}
         run: npm publish
