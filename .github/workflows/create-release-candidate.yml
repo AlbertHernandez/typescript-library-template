@@ -43,5 +43,5 @@ jobs:
             ### 💻 Client installation
             To install the release candidate, you can run:
             ```bash
-            npm install --save typescript-library-template-example@${{ steps.npm.outputs.tag }}
+            npm install --save typescript-library-template-example@${{ steps.release-candidate.outputs.npm-tag }}
             ```
