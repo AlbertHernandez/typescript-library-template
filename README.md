@@ -37,6 +37,7 @@ The main objective of this template is to provide a good base configuration for 
 7. 🤖 ChatOps approach to help creating manually release candidates, getting help and more things. [Here](https://github.com/AlbertHernandez/typescript-library-template/pull/105#issuecomment-1963059727) is an example.
 8. 🐣 Automatic release candidate, you just need to create a Pull Request and an ephemeral version will be created for it. [Here](https://github.com/AlbertHernandez/typescript-library-template/pull/105#issuecomment-1963059409) is an example.
 9. 🥷 Fully automatized release process. You just need to merge into `main` branch using conventional commits and that's all. Automatically we will:
+   - 📘 Update library version
    - 📍 Create the tags associated to your change
    - 📝 Update the changelog
    - 📦 Create a release
