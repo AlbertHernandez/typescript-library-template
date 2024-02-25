@@ -14,6 +14,10 @@ inputs:
     description: 'NPM Token'
     required: true
     type: string
+  pr-number:
+    description: 'Pull request number'
+    required: false
+    type: string
 outputs:
   package-version:
     description: "The new package version"
@@ -64,6 +68,7 @@ runs:
     - uses: marocchino/sticky-pull-request-comment@v2
       with:
         header: <release-candidate>
+        number: ${{ inputs.pr-number }}
         message: |
           ## ☁️ Release Candidate Preview
           📘 Name | 🔑 Latest Commit | 📦 NPM | 🕒 Updated
