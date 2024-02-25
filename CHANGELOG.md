@@ -1,3 +1,12 @@
+## [1.5.17](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.16...v1.5.17) (2024-02-25)
+
+
+### Bug Fixes
+
+* setup node before create changelog ([8b62d7c](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/8b62d7c8b994e587e63aaa4dcc76b9a3151fbb5a))
+
+
+
 ## [1.5.16](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.15...v1.5.16) (2024-02-25)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * change number ([#104](https://github.com/AlbertHernandez/typescript-library-skeleton/issues/104)) ([461c081](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/461c0813fcedfc32f3ea5ab28b5dd893ab51715d))
-
-
-
-## [1.5.12](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.11...v1.5.12) (2024-02-25)
-
-
-### Bug Fixes
-
-* wrong tag ([7a3cb20](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/7a3cb20f2c3930ff77499f8d81dbffac66dfcc39))
 
 
 
