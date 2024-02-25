@@ -22,7 +22,7 @@ jobs:
       - name: Create major and minor tags 📍
         if: ${{ steps.changelog.outputs.tag }}
         run: |
-          TAG=${{ needs.update-library-version.outputs.tag }}
+          TAG=${{ steps.changelog.outputs.tag }}
           major=${TAG%%.*}
           minor=${TAG%.*}
 
