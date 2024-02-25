@@ -55,9 +55,10 @@ runs:
       run: |
         utc=$(date -u +"%b %-d, %Y at %-I:%M%p (UTC)")
         echo "utc=$utc" >> "$GITHUB_OUTPUT"
-        - name: Get short commit sha 🔑
-          uses: benjlevesque/short-sha@v3.0
-          id: short-sha
+    - name: Get short commit sha 🔑
+      uses: benjlevesque/short-sha@v3.0
+      shell: bash
+      id: short-sha
     - uses: marocchino/sticky-pull-request-comment@v2
       with:
         header: <release-candidate>
