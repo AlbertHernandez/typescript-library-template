@@ -1,3 +1,12 @@
+## [1.5.16](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.15...v1.5.16) (2024-02-25)
+
+
+### Bug Fixes
+
+* update badges ([eddd30d](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/eddd30dea9cb8f557f952b915bc35e9fbe5446bd))
+
+
+
 ## [1.5.15](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.14...v1.5.15) (2024-02-25)
 
 
@@ -31,16 +40,6 @@
 ### Bug Fixes
 
 * wrong tag ([7a3cb20](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/7a3cb20f2c3930ff77499f8d81dbffac66dfcc39))
-
-
-
-## [1.5.11](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.10...v1.5.11) (2024-02-25)
-
-
-### Bug Fixes
-
-* change readme ([a1e1ed5](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/a1e1ed50324867efb83c300a9e2061efaceacd82))
-* unify in just one job ([fba729f](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/fba729f79585d0d1a142041f2aab5d2e9afbb079))
 
 
 
