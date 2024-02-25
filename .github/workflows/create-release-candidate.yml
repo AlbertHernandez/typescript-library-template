@@ -1,23 +1,23 @@
-#---
-#name: 'Create release candidate'
-#
-#on:
-#  pull_request:
-#
-#permissions:
-#  pull-requests: write
-#  contents: write
-#
-#jobs:
-#  create-release-candidate:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Checkout 🛬
-#        uses: actions/checkout@v4
-#      - name: Create release candidate 🐣
-#        uses: ./.github/actions/create-release-candidate
-#        id: release-candidate
-#        with:
-#          branch: ${{ github.event.pull_request.head.ref }}
-#          commit-sha: ${{ github.event.pull_request.head.sha }}
-#          npm-token: ${{ secrets.NPM_TOKEN }}
+---
+name: 'Create release candidate'
+
+on:
+  pull_request:
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  create-release-candidate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛬
+        uses: actions/checkout@v4
+      - name: Create release candidate 🐣
+        uses: ./.github/actions/create-release-candidate
+        id: release-candidate
+        with:
+          branch: ${{ github.event.pull_request.head.ref }}
+          commit-sha: ${{ github.event.pull_request.head.sha }}
+          npm-token: ${{ secrets.NPM_TOKEN }}
