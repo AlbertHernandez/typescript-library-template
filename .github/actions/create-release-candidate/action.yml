@@ -30,14 +30,17 @@ runs:
       with:
         npm_token: ${{ inputs.npm-token }}
     - name: Build typescript 📦
+      shell: bash
       run: npm run build && find dist/index.js
     - name: Normalize npm tag
       id: npm
+      shell: bash
       run: |
         npm_tag=$(echo ${{ inputs.branch }} | sed 's/\//-/g')
         echo "NPM Tag: $npm_tag"
         echo "tag=$npm_tag" >> "$GITHUB_OUTPUT"
     - name: Update library version
+      shell: bash
       run: npm version --allow-same-version --no-git-tag-version prerelease --preid=rc.${{ inputs.commit-sha }}
     - name: get-npm-version
       id: package-version
