@@ -37,6 +37,13 @@ jobs:
 
           git push -f origin $major
           git push -f origin $minor
+      - name: Release 🚀
+        if: ${{ steps.changelog.outputs.tag }}
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.changelog.outputs.tag }}
+          body: ${{ steps.changelog.outputs.clean_changelog }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup Node ⚙️
         if: ${{ steps.changelog.outputs.tag }}
         uses: ./.github/actions/setup-node
