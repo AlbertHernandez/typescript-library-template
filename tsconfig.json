@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "module": "commonjs",
-    "target": "ES2022",
+    "target": "es2022",
     "esModuleInterop": true,
     "strict": true,
     "outDir": "dist",
@@ -13,7 +13,8 @@
     "declaration": true,
     "paths": {
       "@src/*": ["src/*"]
-    }
+    },
+    "types": ["vitest/globals"]
   },
   "exclude": ["node_modules", "dist"]
 }

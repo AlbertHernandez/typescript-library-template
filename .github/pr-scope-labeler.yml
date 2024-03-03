@@ -8,10 +8,9 @@
   - changed-files:
       - any-glob-to-any-file:
           - tests/**
-          - .jest/**
-          - scripts/merge-coverage.ts
-          - jest.config.ts
-          - nyc.config.js
+          - vitest.config.**.ts
+          - create-vitest-test-config.ts
+          - .env.test
 
 📝 Documentation:
   - changed-files:
@@ -47,10 +46,10 @@
           - .swcrc
           - .yamllint.yml
           - commitlint.config.ts
-          - jest.config.ts
+          - vitest.config.**.ts
+          - create-vitest-test-config.ts
+          - .env.test
           - lint-staged.config.js
-          - nest-cli.json
-          - nyc.config.js
           - prettier.config.js
           - tsconfig.json
           - tsconfig.prod.json
