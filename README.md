@@ -14,7 +14,7 @@
   <a href="https://nodejs.org/docs/latest-v20.x/api/index.html"><img src="https://img.shields.io/badge/node-20.x-green.svg" alt="node"/></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/typescript-5.x-blue.svg" alt="typescript"/></a>
   <a href="https://vitest.dev/"><img src="https://img.shields.io/badge/Test-Vitest_-yellow.svg" alt="swc"/></a>
-  <a href="https://www.npmjs.com/package/typescript-library-template-example/v/latest"><img src="https://badgen.net/npm/v/typescript-library-template-example?icon=npm&color=green" alt="npm"/></a>
+  <a href="https://www.npmjs.com/package/typescript-library-template-example/v/latest"><img src="https://badgen.net/npm/v/typescript-library-template-example?icon=npm&color=red" alt="npm"/></a>
 </p>
 
 ## 👀 Motivation
