@@ -43,7 +43,7 @@ jobs:
           git push -f origin $minor
       - name: Release 🚀
         if: ${{ steps.changelog.outputs.tag }}
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
