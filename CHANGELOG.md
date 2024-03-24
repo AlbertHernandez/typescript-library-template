@@ -1,3 +1,12 @@
+## [1.5.20](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.19...v1.5.20) (2024-03-24)
+
+
+### Bug Fixes
+
+* force new change to test release v2 ([#146](https://github.com/AlbertHernandez/typescript-library-skeleton/issues/146)) ([9ae0212](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/9ae021225459a3f763424acb94e473a643ad3164))
+
+
+
 ## [1.5.19](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.18...v1.5.19) (2024-03-03)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * update badges ([eddd30d](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/eddd30dea9cb8f557f952b915bc35e9fbe5446bd))
-
-
-
-## [1.5.15](https://github.com/AlbertHernandez/typescript-library-skeleton/compare/v1.5.14...v1.5.15) (2024-02-25)
-
-
-### Bug Fixes
-
-* create github release automatically ([929d0b1](https://github.com/AlbertHernandez/typescript-library-skeleton/commit/929d0b181eff95956289503da050f827cb389f28))
 
 
 
