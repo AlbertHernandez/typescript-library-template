@@ -18,6 +18,7 @@ jobs:
         id: release
         with:
           token: ${{ secrets.PAT_GITHUB_TOKEN }}
+          include-component-in-tag: true
       - name: Checkout 🛬
         if: ${{ steps.release.outputs.releases_created }}
         uses: actions/checkout@v4
