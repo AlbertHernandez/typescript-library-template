@@ -16,8 +16,6 @@ jobs:
     steps:
       - uses: googleapis/release-please-action@v4
         id: release
-        with:
-          token: ${{ secrets.PAT_GITHUB_TOKEN }}
 #      - name: Checkout 🛬
 #        if: ${{ steps.release.outputs.releases_created }}
 #        uses: actions/checkout@v4
