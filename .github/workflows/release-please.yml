@@ -1,0 +1,35 @@
+---
+name: 'Release Please'
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          token: ${{ secrets.PAT_GITHUB_TOKEN }}
+      - name: Checkout 🛬
+        if: ${{ steps.release.outputs.releases_created }}
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_GITHUB_TOKEN }}
+      - name: Setup Node ⚙️
+        uses: ./.github/actions/setup-node
+        with:
+          npm_token: ${{ secrets.NPM_TOKEN }}
+      - name: Build Packages 🏗️
+        if: ${{ steps.release.outputs.releases_created }}
+        run: npm ci
+#      - name: Publish to NPM 🚀
+#        if: ${{ steps.release.outputs.releases_created }}
+#        run: npm publish
