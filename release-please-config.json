@@ -1,68 +1,10 @@
 {
-  "plugins": [
-    {
-      "type": "node-workspace"
-    }
-  ],
   "bootstrap-sha": "b6b9602f90f039f6da582ce32e36239cd69917cf",
   "packages": {
-    ".": {}
-  },
-  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
-  "changelog-sections": [
-    {
-      "type": "feat",
-      "section": "✨ New Features"
-    },
-    {
-      "type": "fix",
-      "section": "🐛 Bug Fixes"
-    },
-    {
-      "type": "chore",
-      "hidden": true,
-      "section": "🧹 Chore"
-    },
-    {
-      "type": "docs",
-      "hidden": true,
-      "section": "📚 Documentation"
-    },
-    {
-      "type": "perf",
-      "section": "🚀 Performance"
-    },
-    {
-      "type": "build",
-      "hidden": true,
-      "section": "🛠️ Build"
-    },
-    {
-      "type": "deps",
-      "section": "📦 Dependencies"
-    },
-    {
-      "type": "ci",
-      "hidden": true,
-      "section": "🚦 CI"
-    },
-    {
-      "type": "refactor",
-      "section": "🔄 Refactoring"
-    },
-    {
-      "type": "revert",
-      "section": "🔙 Reverts"
-    },
-    {
-      "type": "style",
-      "hidden": true,
-      "section": "🎨 Styling"
-    },
-    {
-      "type": "test",
-      "hidden": true,
-      "section": "🧪 Tests"
+    ".": {
+      "include-component-in-tag": false,
+      "release-type": "node"
     }
-  ]
+  },
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
 }
