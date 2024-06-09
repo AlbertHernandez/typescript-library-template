@@ -5,6 +5,12 @@
 - name: ignore-for-release
   description: Ignore pull request for a new release
   color: 9C28FC
+- name: 'autorelease: tagged'
+  description: Used by release-please to indicate a release has been tagged
+  color: EDEDED
+- name: 'autorelease: pending'
+  description: Used by release-please to indicate a release is pending
+  color: EDEDED
 - name: todo
   description: Action we need to perform at some moment
   color: 82FC28
