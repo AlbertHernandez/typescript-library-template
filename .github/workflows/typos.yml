@@ -5,8 +5,7 @@ on:
   push:
 
 jobs:
-  build:
-    name: Lint dotenv
+  typos:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛬
