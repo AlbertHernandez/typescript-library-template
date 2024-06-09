@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.1](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.0...v1.14.1) (2024-06-09)
+
+
+### Bug Fixes
+
+* remove constant ([b964f40](https://github.com/AlbertHernandez/typescript-library-template/commit/b964f405cdfb76144a188ef74c165c77ce34e970))
+
 ## [1.14.0](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.13.0...v1.14.0) (2024-06-09)
 
 
