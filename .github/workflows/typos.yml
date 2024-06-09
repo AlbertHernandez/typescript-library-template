@@ -1,0 +1,15 @@
+---
+name: 'Typos'
+
+on:
+  push:
+
+jobs:
+  build:
+    name: Lint dotenv
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛬
+        uses: actions/checkout@v4
+      - name: 🙊 Run code spell checker to check typos
+        uses: crate-ci/typos@v1.22.3
