@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.14.2](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.1...v1.14.2) (2024-06-09)
+
+
+### Bug Fixes
+
+* add again all actions ([b343ccc](https://github.com/AlbertHernandez/typescript-library-template/commit/b343cccde54c94a512c5d223c1c60457889a4a94))
+* add labels for release-please ([f22b804](https://github.com/AlbertHernandez/typescript-library-template/commit/f22b80499a7d539b9b628062fdf03d8109a24d1f))
+
 ## [1.14.1](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.0...v1.14.1) (2024-06-09)
 
 
