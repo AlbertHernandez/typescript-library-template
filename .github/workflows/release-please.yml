@@ -40,6 +40,6 @@ jobs:
       - name: Build Packages 🏗️
         if: ${{ steps.release.outputs.releases_created }}
         run: npm ci
-#      - name: Publish to NPM 🚀
-#        if: ${{ steps.release.outputs.releases_created }}
-#        run: npm publish
+      - name: Publish to NPM 🚀
+        if: ${{ steps.release.outputs.releases_created }}
+        run: npm publish
