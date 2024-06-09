@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.4](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.3...v1.14.4) (2024-06-09)
+
+
+### 🐛 Bug Fixes
+
+* tag major and minor ([faddc40](https://github.com/AlbertHernandez/typescript-library-template/commit/faddc404fc63b1050c2b5cc16dc102311a35f2a7))
+
 ## [1.14.3](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.2...v1.14.3) (2024-06-09)
 
 
