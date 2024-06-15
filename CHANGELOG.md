@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.7](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.6...v1.14.7) (2024-06-15)
+
+
+### 🐛 Bug Fixes
+
+* add constant ([#255](https://github.com/AlbertHernandez/typescript-library-template/issues/255)) ([f31d89a](https://github.com/AlbertHernandez/typescript-library-template/commit/f31d89a49598d2bc3c7380321c2974b51e73b363))
+
 ## [1.14.6](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.5...v1.14.6) (2024-06-09)
 
 
