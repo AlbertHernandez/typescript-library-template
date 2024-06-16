@@ -35,7 +35,7 @@
     "generate-dist": "tsc --build tsconfig.prod.json",
     "build:clean": "rimraf dist; exit 0",
     "prepare": "husky",
-    "typos": "if command -v typos >/dev/null 2>&1; then typos; else echo \"Typos cli tool is not installed, aborting checking typos. If you want to install it you can run 'brew install typos-cli'\"; fi"
+    "typos": "chmod +x scripts/check_typos.sh && ./scripts/check_typos.sh"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
