@@ -54,6 +54,12 @@
       }
     },
     {
+      "files": ["playground/**"],
+      "rules": {
+        "no-console": "off"
+      }
+    },
+    {
       "files": ["tests/**"],
       "plugins": ["vitest"],
       "extends": ["plugin:vitest/recommended"],
