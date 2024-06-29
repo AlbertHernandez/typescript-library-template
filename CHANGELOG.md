@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.8](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.7...v1.14.8) (2024-06-29)
+
+
+### 🐛 Bug Fixes
+
+* use github pat token in release please to force workflow executions ([ceb3e5a](https://github.com/AlbertHernandez/typescript-library-template/commit/ceb3e5a0075e98e0eccaf9dc1c394edcc60ff1ae))
+
 ## [1.14.7](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.6...v1.14.7) (2024-06-15)
 
 
