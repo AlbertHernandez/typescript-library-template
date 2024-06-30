@@ -4,6 +4,7 @@
   "description": "Template for new typescript libraries",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
   "author": "alberthernandezdev@gmail.com",
   "license": "MIT",
   "bugs": {
@@ -32,7 +33,7 @@
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
     "validate-typescript": "tsc -p tsconfig.prod.json --noEmit",
-    "generate-dist": "tsc --build tsconfig.prod.json",
+    "generate-dist": "tsup src/index.ts --minify --tsconfig tsconfig.prod.json --dts --format cjs,esm --out-dir dist",
     "build:clean": "rimraf dist; exit 0",
     "prepare": "husky",
     "typos": "chmod +x scripts/check_typos.sh && ./scripts/check_typos.sh"
@@ -61,6 +62,7 @@
     "rimraf": "^5.0.7",
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.1.0",
     "typescript": "^5.5.2",
     "unplugin-swc": "^1.4.5",
     "vite": "^5.3.2",
