@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.10](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.9...v1.14.10) (2024-06-30)
+
+
+### 🔄 Refactoring
+
+* change path alias to use @/ instead of just @ ([4f1426d](https://github.com/AlbertHernandez/typescript-library-template/commit/4f1426d4b1d3d1b7a05d67b7a9bd7af76230be24))
+
 ## [1.14.9](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.8...v1.14.9) (2024-06-30)
 
 
