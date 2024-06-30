@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.9](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.8...v1.14.9) (2024-06-30)
+
+
+### 🐛 Bug Fixes
+
+* use tsup to build typescript code ([#271](https://github.com/AlbertHernandez/typescript-library-template/issues/271)) ([9a0b12e](https://github.com/AlbertHernandez/typescript-library-template/commit/9a0b12eeb4d033dada4598c3bf32a0acdc6d0765))
+
 ## [1.14.8](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.7...v1.14.8) (2024-06-29)
 
 
