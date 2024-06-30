@@ -12,7 +12,8 @@
     "resolveJsonModule": true,
     "declaration": true,
     "paths": {
-      "@/src/*": ["src/*"]
+      "@/src/*": ["src/*"],
+      "@/tests/*": ["tests/*"]
     },
     "types": ["vitest/globals"]
   },

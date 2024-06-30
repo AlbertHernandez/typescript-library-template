@@ -9,7 +9,8 @@
     },
     "baseUrl": "./",
     "paths": {
-      "@/src/*": ["src/*"]
+      "@/src/*": ["src/*"],
+      "@/tests/*": ["tests/*"]
     },
     "target": "es2022"
   },
