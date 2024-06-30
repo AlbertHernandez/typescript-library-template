@@ -1,4 +1,4 @@
-import { isPositiveNumber } from "../src";
+import { isPositiveNumber } from "@/src/index";
 
 const value = 2;
 

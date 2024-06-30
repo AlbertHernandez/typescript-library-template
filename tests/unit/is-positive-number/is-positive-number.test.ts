@@ -1,4 +1,4 @@
-import { isPositiveNumber } from "@src/is-positive-number";
+import { isPositiveNumber } from "@/src/is-positive-number";
 
 describe("isPositiveNumber", () => {
   test("when is executed with a positive number should return true", () => {
