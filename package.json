@@ -45,7 +45,7 @@
     "@swc/cli": "^0.4.0",
     "@swc/core": "^1.6.6",
     "@types/fs-extra": "^11.0.4",
-    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.15.0",
     "@vitest/coverage-istanbul": "^1.6.0",
     "eslint": "^8.57.0",
