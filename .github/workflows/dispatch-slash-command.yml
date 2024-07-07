@@ -1,5 +1,5 @@
 ---
-name: Dispatch slash commands
+name: 'Dispatch slash commands'
 
 on:
   issue_comment:
