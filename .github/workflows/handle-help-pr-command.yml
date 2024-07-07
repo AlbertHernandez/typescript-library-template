@@ -1,5 +1,5 @@
 ---
-name: Handle Help PR command
+name: 'Handle Help PR command'
 
 on:
   repository_dispatch:
