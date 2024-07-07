@@ -1,16 +1,16 @@
 ---
 name: 'Setup node'
 
+description: 'Setup node with project version and install dependencies'
+
 inputs:
   version:
     description: 'Node version to use'
     required: false
-    type: string
-    default: '20'
   npm_token:
     description: 'NPM Token'
-    required: true
-    type: string
+    required: false
+    default: ''
 
 runs:
   using: "composite"
@@ -28,6 +28,7 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.version }}
+        node-version-file: '.nvmrc'
         cache: npm
     - name: Install dependencies 📥
       if: steps.cache-node-modules.outputs.cache-hit != 'true'
