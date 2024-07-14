@@ -1,4 +1,3 @@
----
 name: 'Create release candidate'
 
 description: 'Create a release candidate for a new version of the library'
@@ -71,8 +70,7 @@ runs:
         message: |
           ## ☁️ Release Candidate Preview
           📘 Name | 🔑 Latest Commit | 📦 NPM | 🕒 Updated
-          --- | --- | ---| ---
-          [typescript-library-template-example](https://github.com/AlbertHernandez/typescript-library-template/tree/${{ inputs.branch }}) | [${{ steps.short-sha.outputs.sha }}](https://github.com/AlbertHernandez/typescript-library-template/commit/${{ inputs.commit_sha }}) | [NPM](https://www.npmjs.com/package/typescript-library-template-example/v/${{ steps.npm.outputs.tag }}) | ${{ steps.date.outputs.utc }}
+          --- | --- | ---|           [typescript-library-template-example](https://github.com/AlbertHernandez/typescript-library-template/tree/${{ inputs.branch }}) | [${{ steps.short-sha.outputs.sha }}](https://github.com/AlbertHernandez/typescript-library-template/commit/${{ inputs.commit_sha }}) | [NPM](https://www.npmjs.com/package/typescript-library-template-example/v/${{ steps.npm.outputs.tag }}) | ${{ steps.date.outputs.utc }}
           ### 💻 Client installation
           To install the release candidate, you can run:
           ```bash
