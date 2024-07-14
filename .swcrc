@@ -12,10 +12,11 @@
       "@/src/*": ["src/*"],
       "@/tests/*": ["tests/*"]
     },
-    "target": "es2022"
+    "target": "esnext"
   },
   "module": {
-    "type": "commonjs"
+    "type": "es6",
+    "resolveFully": true
   },
   "minify": false
 }

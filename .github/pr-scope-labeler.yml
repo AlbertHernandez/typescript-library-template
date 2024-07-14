@@ -48,10 +48,11 @@
           - vitest.config.**.ts
           - create-vitest-test-config.ts
           - .env.test
-          - lint-staged.config.js
-          - prettier.config.js
+          - lint-staged.config.mjs
+          - prettier.config.mjs
           - tsconfig.json
           - tsconfig.prod.json
+          - nodemon.json
 
 📦 Dependencies:
   - changed-files:

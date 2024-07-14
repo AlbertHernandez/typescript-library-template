@@ -10,4 +10,5 @@ services:
     ports:
       - "9229:9229"
     volumes:
-      - .:/app
+      - ./src:/app/src
+      - ./playground:/app/playground
