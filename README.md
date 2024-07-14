@@ -43,7 +43,7 @@ The main objective of this template is to provide a good base configuration for 
    - 📝 Update the changelog
    - 📦 Create a release
    - ☁️ Publish the new version to NPM
-9. 💃 Clients can use the library with ESModules or CommonJS, as they prefer.
+9. ??‍🔥 Usage of ESModules instead of CommonJS, which is the standard in JavaScript. Also allow clients to use the library in both ways.
 
 ## 🤩 Other templates
 
