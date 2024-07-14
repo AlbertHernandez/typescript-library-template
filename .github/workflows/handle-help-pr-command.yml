@@ -15,6 +15,7 @@ jobs:
           comment-id: ${{ github.event.client_payload.github.payload.comment.id }}
           body: |
             > 🔑 Command | 📝 Description
-            > --- |             > /create-rc | Creates a new release candidate version
+            > --- | ---
+            > /create-rc | Creates a new release candidate version
             > /help | Show information about the available commands
           reactions: hooray
