@@ -1,4 +1,3 @@
----
 name: 'Create release candidate'
 
 description: 'Create a release candidate for a new version of the library'
