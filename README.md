@@ -43,6 +43,7 @@ The main objective of this template is to provide a good base configuration for 
    - 📝 Update the changelog
    - 📦 Create a release
    - ☁️ Publish the new version to NPM
+9. 💃 Clients can use the library with ESModules or CommonJS, as they prefer.
 
 ## 🤩 Other templates
 
