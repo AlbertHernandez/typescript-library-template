@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.0](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.10...v1.15.0) (2024-07-14)
+
+
+### ✨ New Features
+
+* migrate from commonjs to esmodules ([#300](https://github.com/AlbertHernandez/typescript-library-template/issues/300)) ([c7c5ba6](https://github.com/AlbertHernandez/typescript-library-template/commit/c7c5ba602c77524d4fa84867b8312cb193b35a6b))
+
 ## [1.14.10](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.9...v1.14.10) (2024-06-30)
 
 
