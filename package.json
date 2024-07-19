@@ -64,7 +64,7 @@
     "prettier": "^3.3.3",
     "rimraf": "^5.0.8",
     "tsconfig-paths": "^4.2.0",
-    "tsup": "^8.1.2",
+    "tsup": "^8.2.0",
     "tsx": "^4.16.2",
     "typescript": "^5.5.3",
     "unplugin-swc": "^1.5.1",
