@@ -45,7 +45,7 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@commitlint/types": "^19.0.3",
     "@swc/cli": "^0.4.0",
-    "@swc/core": "^1.7.4",
+    "@swc/core": "^1.7.5",
     "@types/fs-extra": "^11.0.4",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
