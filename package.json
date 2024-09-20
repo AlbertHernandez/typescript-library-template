@@ -68,7 +68,7 @@
     "tsx": "^4.19.1",
     "typescript": "^5.6.2",
     "unplugin-swc": "^1.5.1",
-    "vite": "^5.4.6",
+    "vite": "^5.4.7",
     "vitest": "^2.0.2"
   },
   "files": [
