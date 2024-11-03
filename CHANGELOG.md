@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.15.0...v2.0.0) (2024-11-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade to node 22 and remove support to 18 ([#418](https://github.com/AlbertHernandez/typescript-library-template/issues/418))
+
+### ✨ New Features
+
+* upgrade to node 22 and remove support to 18 ([#418](https://github.com/AlbertHernandez/typescript-library-template/issues/418)) ([5c82b6e](https://github.com/AlbertHernandez/typescript-library-template/commit/5c82b6ec2cd9f3092f971d2b70b56b74961ff584))
+
+
+### 🐛 Bug Fixes
+
+* **deps:** bump rollup from 4.21.0 to 4.22.4 ([#391](https://github.com/AlbertHernandez/typescript-library-template/issues/391)) ([a94ce69](https://github.com/AlbertHernandez/typescript-library-template/commit/a94ce69c5f1a992a153d1b0fe235d5e5e6947aaa))
+
 ## [1.15.0](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.14.10...v1.15.0) (2024-07-14)
 
 
