@@ -73,7 +73,8 @@
     "vitest": "^2.0.2"
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "^4.24.3"
+    "@rollup/rollup-linux-x64-gnu": "^4.24.3",
+    "@swc/core-linux-x64-gnu": "^1.7.42"
   },
   "files": [
     "dist"
