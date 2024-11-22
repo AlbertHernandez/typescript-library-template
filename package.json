@@ -74,7 +74,7 @@
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "^4.27.3",
-    "@swc/core-linux-x64-gnu": "^1.9.1"
+    "@swc/core-linux-x64-gnu": "^1.9.3"
   },
   "files": [
     "dist"
