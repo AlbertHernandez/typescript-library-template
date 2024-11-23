@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.0.1](https://github.com/AlbertHernandez/typescript-library-template/compare/v2.0.0...v2.0.1) (2024-11-23)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.24.3 to 4.24.4 ([#422](https://github.com/AlbertHernandez/typescript-library-template/issues/422)) ([29046b8](https://github.com/AlbertHernandez/typescript-library-template/commit/29046b87a067754b6e262af66d330f7000011c36))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.24.4 to 4.25.0 ([#434](https://github.com/AlbertHernandez/typescript-library-template/issues/434)) ([2b692d1](https://github.com/AlbertHernandez/typescript-library-template/commit/2b692d1ef182711266fe6e094fc6b11f6a8d35b8))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.25.0 to 4.26.0 ([#436](https://github.com/AlbertHernandez/typescript-library-template/issues/436)) ([0cca3a0](https://github.com/AlbertHernandez/typescript-library-template/commit/0cca3a00fd2312a12dc50f7d5d61c179909353e1))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.26.0 to 4.27.2 ([#438](https://github.com/AlbertHernandez/typescript-library-template/issues/438)) ([6edc137](https://github.com/AlbertHernandez/typescript-library-template/commit/6edc1378fef9efd6f349181e0e9fd90142725adb))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.27.2 to 4.27.3 ([#441](https://github.com/AlbertHernandez/typescript-library-template/issues/441)) ([bde5b09](https://github.com/AlbertHernandez/typescript-library-template/commit/bde5b0974d7beba9866fb8dd8f6952065a970b19))
+* **deps:** bump @swc/core-linux-x64-gnu from 1.8.0 to 1.9.1 ([#426](https://github.com/AlbertHernandez/typescript-library-template/issues/426)) ([30d9dae](https://github.com/AlbertHernandez/typescript-library-template/commit/30d9dae74beb2155748844434d8f9398739cf25e))
+* **deps:** bump @swc/core-linux-x64-gnu from 1.9.2 to 1.9.3 ([#445](https://github.com/AlbertHernandez/typescript-library-template/issues/445)) ([956b31b](https://github.com/AlbertHernandez/typescript-library-template/commit/956b31b80e7cfade048a4ebe62637b0ad8c61e82))
+
 ## [2.0.0](https://github.com/AlbertHernandez/typescript-library-template/compare/v1.15.0...v2.0.0) (2024-11-03)
 
 
