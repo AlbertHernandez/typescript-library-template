@@ -1,4 +1,4 @@
-name: 'Package size'
+name: '📦 Package size'
 
 on:
   pull_request:
