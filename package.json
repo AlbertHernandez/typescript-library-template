@@ -1,6 +1,6 @@
 {
   "name": "typescript-library-template-example",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Template for new typescript libraries",
   "main": "dist/index.cjs",
   "module": "lib/index.js",
