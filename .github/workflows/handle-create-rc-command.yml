@@ -1,4 +1,4 @@
-name: 'Handle Create RC command'
+name: '📦 Handle Create RC command'
 
 on:
   repository_dispatch:
