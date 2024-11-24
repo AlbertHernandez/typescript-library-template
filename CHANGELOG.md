@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/AlbertHernandez/typescript-library-template/compare/v2.0.1...v2.0.2) (2024-11-24)
+
+
+### 🐛 Bug Fixes
+
+* verify if pnpm works fine ([#450](https://github.com/AlbertHernandez/typescript-library-template/issues/450)) ([cd27a83](https://github.com/AlbertHernandez/typescript-library-template/commit/cd27a832bcd6f60ac1dded78c35dbe9aaac49514))
+
 ## [2.0.1](https://github.com/AlbertHernandez/typescript-library-template/compare/v2.0.0...v2.0.1) (2024-11-23)
 
 
