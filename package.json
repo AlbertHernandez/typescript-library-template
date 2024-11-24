@@ -27,17 +27,18 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon",
-    "prepublishOnly": "npm i && npm run build",
-    "build": "npm run validate-typescript && npm run build:clean && npm run generate-dist",
-    "test": "rimraf coverage && npm run test:unit",
+    "prepublishOnly": "pnpm i && pnpm build",
+    "build": "pnpm validate-typescript && pnpm build:clean && pnpm generate-dist",
+    "test": "rimraf coverage && pnpm test:unit",
     "test:unit": "vitest run --coverage",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "eslint --ignore-path .gitignore . --ext .js,.ts --fix",
+    "lint:file": "eslint --ignore-path .gitignore",
     "lint:yaml": "chmod +x scripts/lint_yaml.sh && ./scripts/lint_yaml.sh",
     "validate-typescript": "tsc -p tsconfig.prod.json --noEmit",
     "generate-dist": "tsup src/index.ts --minify --tsconfig tsconfig.prod.json --dts --format cjs,esm --out-dir dist",
     "build:clean": "rimraf dist; exit 0",
-    "prepare": "husky",
+    "prepare": "[ -f .husky/install.mjs ] && node .husky/install.mjs || true",
     "typos": "chmod +x scripts/check_typos.sh && ./scripts/check_typos.sh"
   },
   "devDependencies": {
