@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [20.x, 22.x]
+        node-version: [22.x]
 
     steps:
       - name: Checkout 🛬
@@ -21,8 +21,26 @@ jobs:
           version: ${{ matrix.node-version }}
           npm_token: ${{ secrets.NPM_TOKEN }}
       - name: Build typescript 📦
-        run: pnpm build && find dist/index.js
+        run: node --run build && find dist/index.js
       - name: Lint code 💅
-        run: pnpm lint
+        run: node --run lint
       - name: Run tests ✅
-        run: pnpm test
+        run: node --run test
+
+  # Node version before 22.x does not support the node --run command, so we need to use the pnpm command instead.
+  build-legacy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛬
+        uses: actions/checkout@v4
+      - name: Setup Node ⚙️
+        uses: ./.github/actions/setup-node
+        with:
+          version: 20.x
+          npm_token: ${{ secrets.NPM_TOKEN }}
+      - name: Build typescript 📦
+        run: pnpm build:legacy && find dist/index.js
+      - name: Lint code 💅
+        run: pnpm lint:legacy
+      - name: Run tests ✅
+        run: pnpm test:legacy

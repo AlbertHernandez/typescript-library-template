@@ -23,4 +23,4 @@ COPY nodemon.json .
 COPY src src
 COPY playground playground
 
-CMD ["pnpm", "dev"]
+CMD ["node", "--run", "dev"]
