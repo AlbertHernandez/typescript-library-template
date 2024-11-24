@@ -92,7 +92,7 @@ docker-compose down
 ## ⚙️ Building
 
 ```bash
-pnpm build
+node --run build
 ```
 
 ## ✅ Testing
@@ -100,7 +100,7 @@ pnpm build
 If you want to run the tests of the project, you can execute the following command:
 
 ```bash
-pnpm test
+node --run test
 ```
 
 ## 💅 Linting
@@ -108,11 +108,11 @@ pnpm test
 To run the linter you can execute:
 
 ```bash
-pnpm lint
+node --run lint
 ```
 
 And for trying to fix lint issues automatically, you can run:
 
 ```bash
-pnpm lint:fix
+node --run lint:fix
 ```
