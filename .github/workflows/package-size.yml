@@ -23,15 +23,6 @@ jobs:
           echo "short=$short" >> "$GITHUB_OUTPUT"
       - name: Setup Node ⚙️
         uses: ./.github/actions/setup-node
-      - name: Cache Dependencies ⌛️
-        uses: 'actions/cache@v4'
-        id: cache-node-modules
-        with:
-          path: 'node_modules'
-          key: deps-node-modules-${{ hashFiles('**/pnpm-lock.yaml') }}
-      - name: Install dependencies 📥
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
-        run: pnpm install --frozen-lockfile
       - name: 📦 Cache package size for commit ${{ steps.commit.outputs.short }}
         uses: actions/cache@v4
         with:
@@ -60,15 +51,6 @@ jobs:
           ref: ${{ github.head_ref }}
       - name: Setup Node ⚙️
         uses: ./.github/actions/setup-node
-      - name: Cache Dependencies ⌛️
-        uses: 'actions/cache@v4'
-        id: cache-node-modules
-        with:
-          path: 'node_modules'
-          key: deps-node-modules-${{ hashFiles('**/pnpm-lock.yaml') }}
-      - name: Install dependencies 📥
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
-        run: pnpm install --frozen-lockfile
       - name: 🎁 Calculate package size in ${{ github.head_ref }}
         id: package-head
         run: |
