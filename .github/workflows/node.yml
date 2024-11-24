@@ -42,6 +42,6 @@ jobs:
       - name: Build typescript 📦
         run: pnpm build:legacy && find dist/index.js
       - name: Lint code 💅
-        run: pnpm lint:legacy
+        run: pnpm lint
       - name: Run tests ✅
         run: pnpm test:legacy
