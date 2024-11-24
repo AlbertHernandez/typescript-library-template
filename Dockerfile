@@ -9,7 +9,7 @@ FROM base AS dev
 ENV NODE_ENV=development
 ENV CI=true
 
-RUN npm install -g pnpm@9
+RUN npm install -g pnpm@9.14.2
 
 COPY package.json pnpm-lock.yaml ./
 
