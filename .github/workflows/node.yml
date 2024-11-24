@@ -30,7 +30,7 @@ jobs:
   # Node version before 22.x does not support the node --run command, so we need to use the pnpm command instead.
   build-node-20:
     runs-on: ubuntu-latest
-    name: 'Build (20.x)'
+    name: 'build (20.x)'
     steps:
       - name: Checkout 🛬
         uses: actions/checkout@v4
