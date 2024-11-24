@@ -21,8 +21,8 @@ jobs:
           version: ${{ matrix.node-version }}
           npm_token: ${{ secrets.NPM_TOKEN }}
       - name: Build typescript 📦
-        run: npm run build && find dist/index.js
+        run: pnpm build && find dist/index.js
       - name: Lint code 💅
-        run: npm run lint
+        run: pnpm lint
       - name: Run tests ✅
-        run: npm run test
+        run: pnpm test

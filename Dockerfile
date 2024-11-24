@@ -7,11 +7,14 @@ ARG NPM_TOKEN
 FROM base AS dev
 
 ENV NODE_ENV=development
+ENV CI=true
 
-COPY package*.json .
+RUN npm install -g pnpm@9
+
+COPY package.json pnpm-lock.yaml ./
 
 RUN echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ".npmrc" && \
-    npm ci && \
+    pnpm install --frozen-lockfile && \
     rm -f .npmrc
 
 COPY tsconfig*.json .
@@ -20,4 +23,4 @@ COPY nodemon.json .
 COPY src src
 COPY playground playground
 
-CMD ["npm", "run", "dev"]
+CMD ["pnpm", "dev"]

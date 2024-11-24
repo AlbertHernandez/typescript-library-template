@@ -33,7 +33,7 @@ runs:
         npm_token: ${{ inputs.npm_token }}
     - name: Build typescript 📦
       shell: bash
-      run: npm run build && find dist/index.js
+      run: pnpm build && find dist/index.js
     - name: Normalize npm tag
       id: npm
       shell: bash

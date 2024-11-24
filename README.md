@@ -12,6 +12,7 @@
   <a href="https://github.com/AlbertHernandez/typescript-library-template/actions/workflows/node.yml?branch=main"><img src="https://github.com/AlbertHernandez/typescript-library-template/actions/workflows/node.yml/badge.svg?branch=main" alt="nodejs"/></a>
   <a href="https://nodejs.org"><img src="https://img.shields.io/badge/supported_node-20.x_--_22.x-forestgreen.svg" alt="supported node"/></a>
   <a href="https://nodejs.org/docs/latest-v22.x/api/index.html"><img src="https://img.shields.io/badge/node-22.x-green.svg" alt="node"/></a>
+  <a href="https://pnpm.io/"><img src="https://img.shields.io/badge/pnpm-9.x-red.svg" alt="pnpm"/></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/typescript-5.x-blue.svg" alt="typescript"/></a>
   <a href="https://vitest.dev/"><img src="https://img.shields.io/badge/Test-Vitest_-yellow.svg" alt="swc"/></a>
   <a href="https://www.npmjs.com/package/typescript-library-template-example/v/latest"><img src="https://badgen.net/npm/v/typescript-library-template-example?icon=npm&color=red" alt="npm"/></a>
@@ -44,6 +45,7 @@ The main objective of this template is to provide a good base configuration for 
    - 📦 Create a release
    - ☁️ Publish the new version to NPM
 9. 🐦‍🔥 Use of ESModules instead of CommonJS, which is the standard in JavaScript, while allowing clients to use the library regardless of whether they use ESModules or CommonJS.
+10. 📦 Use of [pnpm](https://pnpm.io/) as package manager, which is faster and more efficient than npm or yarn.
 
 ## 🤩 Other templates
 
@@ -90,7 +92,7 @@ docker-compose down
 ## ⚙️ Building
 
 ```bash
-npm run build
+pnpm build
 ```
 
 ## ✅ Testing
@@ -98,7 +100,7 @@ npm run build
 If you want to run the tests of the project, you can execute the following command:
 
 ```bash
-npm run test
+pnpm test
 ```
 
 ## 💅 Linting
@@ -106,11 +108,11 @@ npm run test
 To run the linter you can execute:
 
 ```bash
-npm run lint
+pnpm lint
 ```
 
 And for trying to fix lint issues automatically, you can run:
 
 ```bash
-npm run lint:fix
+pnpm lint:fix
 ```
