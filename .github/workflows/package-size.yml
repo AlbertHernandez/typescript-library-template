@@ -22,9 +22,7 @@ jobs:
           short=$(git rev-parse --short HEAD)
           echo "short=$short" >> "$GITHUB_OUTPUT"
       - name: Setup Node ⚙️
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: '.nvmrc'
+        uses: ./.github/actions/setup-node
       - name: Cache Dependencies ⌛️
         uses: 'actions/cache@v4'
         id: cache-node-modules
@@ -61,9 +59,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       - name: Setup Node ⚙️
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: '.nvmrc'
+        uses: ./.github/actions/setup-node
       - name: Cache Dependencies ⌛️
         uses: 'actions/cache@v4'
         id: cache-node-modules
