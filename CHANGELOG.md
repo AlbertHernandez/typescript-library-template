@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/AlbertHernandez/typescript-library-template/compare/v2.0.2...v2.0.3) (2024-11-24)
+
+
+### 🐛 Bug Fixes
+
+* specify packageManager ([#453](https://github.com/AlbertHernandez/typescript-library-template/issues/453)) ([826a22c](https://github.com/AlbertHernandez/typescript-library-template/commit/826a22cbacd1b9ebad9e9873d4708c0bf2247e8c))
+
 ## [2.0.2](https://github.com/AlbertHernandez/typescript-library-template/compare/v2.0.1...v2.0.2) (2024-11-24)
 
 
