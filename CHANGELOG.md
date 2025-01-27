@@ -1,5 +1,28 @@
 # Changelog
 
+## [2.0.4](https://github.com/AlbertHernandez/typescript-library-template/compare/v2.0.3...v2.0.4) (2025-01-27)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.27.4 to 4.28.0 ([#468](https://github.com/AlbertHernandez/typescript-library-template/issues/468)) ([e086e9a](https://github.com/AlbertHernandez/typescript-library-template/commit/e086e9a9fd6c28980e1f4c3fa51ebdf5290a5fef))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.28.0 to 4.28.1 ([#474](https://github.com/AlbertHernandez/typescript-library-template/issues/474)) ([3253004](https://github.com/AlbertHernandez/typescript-library-template/commit/3253004b56d5af2862af1f42dc224fd06688b718))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.28.1 to 4.29.0 ([#489](https://github.com/AlbertHernandez/typescript-library-template/issues/489)) ([b6d5976](https://github.com/AlbertHernandez/typescript-library-template/commit/b6d597683e35e7d5ad38424d057e321251469f9b))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.29.0 to 4.29.1 ([#490](https://github.com/AlbertHernandez/typescript-library-template/issues/490)) ([6b4ca1b](https://github.com/AlbertHernandez/typescript-library-template/commit/6b4ca1b1fc2511d99b2d3656f0cb194b60eaaa84))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.29.1 to 4.30.0 ([#508](https://github.com/AlbertHernandez/typescript-library-template/issues/508)) ([fdea7db](https://github.com/AlbertHernandez/typescript-library-template/commit/fdea7db6fd9d159906abde5431db39223493c270))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.30.0 to 4.30.1 ([#511](https://github.com/AlbertHernandez/typescript-library-template/issues/511)) ([a7e5ca0](https://github.com/AlbertHernandez/typescript-library-template/commit/a7e5ca0b0cea8472a87af9190a5f770fd1ec677c))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.30.1 to 4.31.0 ([#526](https://github.com/AlbertHernandez/typescript-library-template/issues/526)) ([25c066e](https://github.com/AlbertHernandez/typescript-library-template/commit/25c066e8b803f06467b4365bf45fcf78a8c945a7))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.31.0 to 4.32.0 ([#537](https://github.com/AlbertHernandez/typescript-library-template/issues/537)) ([1f1b184](https://github.com/AlbertHernandez/typescript-library-template/commit/1f1b184fa7144cf7507a2328eee032cc1c07e83e))
+* **deps:** bump @swc/core-linux-x64-gnu from 1.10.0 to 1.10.1 ([#475](https://github.com/AlbertHernandez/typescript-library-template/issues/475)) ([4dab804](https://github.com/AlbertHernandez/typescript-library-template/commit/4dab8049ddab4f086926bee7ee561a5f011151b9))
+* **deps:** bump @swc/core-linux-x64-gnu from 1.10.1 to 1.10.2 ([#493](https://github.com/AlbertHernandez/typescript-library-template/issues/493)) ([b88a51b](https://github.com/AlbertHernandez/typescript-library-template/commit/b88a51b81526014acf75dad992f83de859a15840))
+* **deps:** bump @swc/core-linux-x64-gnu from 1.10.2 to 1.10.3 ([#496](https://github.com/AlbertHernandez/typescript-library-template/issues/496)) ([677e2dd](https://github.com/AlbertHernandez/typescript-library-template/commit/677e2dd7c27e4d4f77f7e76d2e99453a8ac9f87c))
+* **deps:** bump @swc/core-linux-x64-gnu from 1.10.3 to 1.10.4 ([#501](https://github.com/AlbertHernandez/typescript-library-template/issues/501)) ([00ac968](https://github.com/AlbertHernandez/typescript-library-template/commit/00ac9681c26ba9e1b3e5193ce1d2ff861e17f56f))
+* **deps:** bump @swc/core-linux-x64-gnu from 1.10.4 to 1.10.6 ([#512](https://github.com/AlbertHernandez/typescript-library-template/issues/512)) ([ad22a83](https://github.com/AlbertHernandez/typescript-library-template/commit/ad22a83fa27b23ef8772a486fd98a2c2eed454d7))
+* **deps:** bump @swc/core-linux-x64-gnu from 1.10.6 to 1.10.7 ([#515](https://github.com/AlbertHernandez/typescript-library-template/issues/515)) ([8c77c57](https://github.com/AlbertHernandez/typescript-library-template/commit/8c77c57a964a6441bee744ea258d8f6bfbf10327))
+* **deps:** bump @swc/core-linux-x64-gnu from 1.10.7 to 1.10.9 ([#531](https://github.com/AlbertHernandez/typescript-library-template/issues/531)) ([c676d16](https://github.com/AlbertHernandez/typescript-library-template/commit/c676d16e23260613119460a8037bb46c92622c3c))
+* **deps:** bump @swc/core-linux-x64-gnu from 1.9.3 to 1.10.0 ([#472](https://github.com/AlbertHernandez/typescript-library-template/issues/472)) ([18ff18e](https://github.com/AlbertHernandez/typescript-library-template/commit/18ff18e0e85c3f94d163424b9ea6c772d701fb08))
+* **deps:** bump nanoid from 3.3.7 to 3.3.8 ([#479](https://github.com/AlbertHernandez/typescript-library-template/issues/479)) ([877c033](https://github.com/AlbertHernandez/typescript-library-template/commit/877c0336070f0f237507f19c9958b7926e4cb29c))
+
 ## [2.0.3](https://github.com/AlbertHernandez/typescript-library-template/compare/v2.0.2...v2.0.3) (2024-11-24)
 
 
