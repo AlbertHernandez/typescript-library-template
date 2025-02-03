@@ -54,7 +54,7 @@
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.12.0",
     "@typescript-eslint/eslint-plugin": "^8.12.2",
-    "@typescript-eslint/parser": "^8.21.0",
+    "@typescript-eslint/parser": "^8.23.0",
     "@vitest/coverage-istanbul": "^2.1.5",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
