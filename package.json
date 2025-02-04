@@ -52,7 +52,7 @@
     "@swc/cli": "^0.6.0",
     "@swc/core": "^1.10.12",
     "@types/fs-extra": "^11.0.4",
-    "@types/node": "^22.12.0",
+    "@types/node": "^22.13.1",
     "@typescript-eslint/eslint-plugin": "^8.12.2",
     "@typescript-eslint/parser": "^8.23.0",
     "@vitest/coverage-istanbul": "^2.1.5",
