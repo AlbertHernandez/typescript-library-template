@@ -9,8 +9,8 @@ importers:
   .:
     optionalDependencies:
       '@rollup/rollup-linux-x64-gnu':
-        specifier: ^4.34.1
-        version: 4.34.1
+        specifier: ^4.34.2
+        version: 4.34.2
       '@swc/core-linux-x64-gnu':
         specifier: ^1.10.12
         version: 1.10.12
@@ -1007,8 +1007,8 @@ packages:
     cpu: [x64]
     os: [linux]
 
-  '@rollup/rollup-linux-x64-gnu@4.34.1':
-    resolution: {integrity: sha512-hzpleiKtq14GWjz3ahWvJXgU1DQC9DteiwcsY4HgqUJUGxZThlL66MotdUEK9zEo0PK/2ADeZGM9LIondE302A==}
+  '@rollup/rollup-linux-x64-gnu@4.34.2':
+    resolution: {integrity: sha512-j+jFdfOycLIQ7FWKka9Zd3qvsIyugg5LeZuHF6kFlXo6MSOc6R1w37YUVy8VpAKd81LMWGi5g9J25P09M0SSIw==}
     cpu: [x64]
     os: [linux]
 
@@ -3938,7 +3938,7 @@ snapshots:
   '@rollup/rollup-linux-x64-gnu@4.32.1':
     optional: true
 
-  '@rollup/rollup-linux-x64-gnu@4.34.1':
+  '@rollup/rollup-linux-x64-gnu@4.34.2':
     optional: true
 
   '@rollup/rollup-linux-x64-musl@4.27.4':
