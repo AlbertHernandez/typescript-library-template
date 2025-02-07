@@ -12,8 +12,8 @@ importers:
         specifier: ^4.34.6
         version: 4.34.6
       '@swc/core-linux-x64-gnu':
-        specifier: ^1.10.12
-        version: 1.10.12
+        specifier: ^1.10.14
+        version: 1.10.14
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.7.1
@@ -1098,12 +1098,6 @@ packages:
     resolution: {integrity: sha512-+oYVqJvFw62InZ8PIy1rBACJPC2WTe4vbVb9kM1jJj2D7dKLm9acnnYIVIDsM5Wo7Uab8RvPHXVbs19IBurzuw==}
     engines: {node: '>=10'}
     cpu: [arm64]
-    os: [linux]
-
-  '@swc/core-linux-x64-gnu@1.10.12':
-    resolution: {integrity: sha512-XldSIHyjD7m1Gh+/8rxV3Ok711ENLI420CU2EGEqSe3VSGZ7pHJvJn9ZFbYpWhsLxPqBYMFjp3Qw+J6OXCPXCA==}
-    engines: {node: '>=10'}
-    cpu: [x64]
     os: [linux]
 
   '@swc/core-linux-x64-gnu@1.10.14':
@@ -4012,9 +4006,6 @@ snapshots:
     optional: true
 
   '@swc/core-linux-arm64-musl@1.10.14':
-    optional: true
-
-  '@swc/core-linux-x64-gnu@1.10.12':
     optional: true
 
   '@swc/core-linux-x64-gnu@1.10.14':
