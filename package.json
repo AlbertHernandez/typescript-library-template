@@ -50,7 +50,7 @@
     "@commitlint/config-conventional": "^19.7.1",
     "@commitlint/types": "^19.5.0",
     "@swc/cli": "^0.6.0",
-    "@swc/core": "^1.11.5",
+    "@swc/core": "^1.11.7",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.13.9",
     "@typescript-eslint/eslint-plugin": "^8.12.2",
