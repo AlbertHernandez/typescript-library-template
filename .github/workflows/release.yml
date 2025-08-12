@@ -19,7 +19,7 @@ jobs:
           token: ${{ secrets.PAT_GITHUB_TOKEN }}
       - name: Checkout 🛬
         if: ${{ steps.release.outputs.release_created }}
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Tag major and minor versions 🏷️
         if: ${{ steps.release.outputs.release_created }}
         run: |
