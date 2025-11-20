@@ -13,7 +13,7 @@ jobs:
     outputs:
       package_size: ${{ steps.package-base.outputs.package_size }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.base_ref }}
       - name: Get commit short hash
@@ -46,7 +46,7 @@ jobs:
     outputs:
       package_size: ${{ steps.package-head.outputs.package_size }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.head_ref }}
       - name: Setup Node ⚙️
