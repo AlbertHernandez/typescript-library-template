@@ -61,7 +61,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [calculate-base, calculate-head]
     steps:
-      - uses: marocchino/sticky-pull-request-comment@v2
+      - uses: marocchino/sticky-pull-request-comment@v3
         env:
           BASE_PACKAGE_SIZE: ${{needs.calculate-base.outputs.package_size}}
           HEAD_PACKAGE_SIZE: ${{needs.calculate-head.outputs.package_size}}
