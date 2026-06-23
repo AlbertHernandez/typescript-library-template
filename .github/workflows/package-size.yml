@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node ⚙️
         uses: ./.github/actions/setup-node
       - name: 📦 Cache package size for commit ${{ steps.commit.outputs.short }}
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: base-package-size.txt
           key: base-package-size-os-${{ runner.os }}-commit-${{ steps.commit.outputs.short }}
